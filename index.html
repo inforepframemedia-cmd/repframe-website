@@ -15,7 +15,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <title>RepFrame Media | Web Design, Video Ads & Creative Studio</title>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"RepFrame Media","url":"https://inforepframemedia-cmd.github.io/repframe-website/","email":"info.repframemedia@gmail.com","description":"Creative studio offering web design, short-form video ads, and social content.","areaServed":[{"@type":"Place","name":"Amsterdam, Netherlands"},{"@type":"Place","name":"Dallas–Fort Worth, Texas, United States"}],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Creative services","itemListElement":[{"@type":"OfferCatalog","name":"Website design"},{"@type":"OfferCatalog","name":"Short-form video advertising"},{"@type":"OfferCatalog","name":"Social content production"}]}}
@@ -39,13 +39,78 @@ footer{padding:37px 0 50px;border-top:1px solid var(--line);background:#08070b}.
 @media(max-width:850px){.nav-links,.nav-actions>.btn{display:none}.mobile-nav{display:block}.hero-layout{grid-template-columns:1fr;min-height:auto;padding-top:72px;padding-bottom:50px}.hero-stage{height:450px;max-width:600px;width:100%;margin:auto}.hero-copy h1{font-size:clamp(60px,9vw,92px)}.section{padding:84px 0}.section-top{display:block}.section-desc{max-width:650px}.services-grid{grid-template-columns:1fr 1fr}.services-grid .service:last-child{grid-column:1/-1}.showcase,.two-col,.faq,.contact-wrap{grid-template-columns:1fr}.showcase-art{min-height:380px}.steps{grid-template-columns:1fr 1fr}.steps .step:last-child{grid-column:1/-1}}
 @media(max-width:570px){.wrap{padding:0 18px}.nav{height:68px}.brand{font-size:15px}.brand-mark{width:34px;height:34px}.hero-layout{padding-top:56px}.hero-copy h1{font-size:clamp(52px,13vw,72px);letter-spacing:-.075em}.hero-copy>p{font-size:15px}.hero-buttons .btn{width:100%}.hero-stage{height:315px;margin-top:5px}.browser{max-width:340px}.browser-content{height:218px;padding:15px}.browser-top{height:28px}.mini-headline{font-size:33px;margin-top:40px}.mini-planet{width:130px;height:130px}.mini-nav{font-size:10px}.mini-nav small{display:none}.float-tag{font-size:8px;padding:8px}.float-tag.first{right:0;top:5px}.float-tag.second{bottom:5px}.browser-foot{font-size:8px}.ticker-inner{font-size:9px;gap:12px}.section h2{font-size:clamp(39px,10vw,58px)}.services-grid{grid-template-columns:1fr}.services-grid .service:last-child{grid-column:auto}.service-visual{height:230px}.service p{min-height:0}.showcase-art{min-height:310px;padding:9px}.example-browser{width:94%;height:235px}.example-content{height:184px}.example-copy{padding:15px}.example-copy strong{font-size:19px}.example-copy p{font-size:8px}.example-copy span{font-size:7px}.example-object{margin:18px 8px 0 0}.mini-mobile{width:93px;height:183px;right:1px;bottom:13px}.mini-mobile-art{height:70px}.trial-banner{display:block;padding:28px 22px}.trial-banner .btn{margin-top:25px;width:100%}.steps{grid-template-columns:1fr}.steps .step:last-child{grid-column:auto}.form-grid{grid-template-columns:1fr;gap:0}.contact-panel{padding:22px}.footer-grid{display:block}.footer-meta{text-align:left;margin-top:25px}.chat-launch{right:15px;bottom:15px;width:56px;height:56px}.chat{right:12px;bottom:80px;max-height:70vh}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important;transform:none!important}}
+
+/* RepFrame Media: rose-neon studio identity */
+:root{--bg:#0b0710;--panel:#140e1a;--panel2:#1b1223;--text:#fff8fe;--muted:#c3b3c8;--soft:#9a849e;--line:rgba(255,215,249,.14);--violet:#e59bff;--violet2:#c65bed;--glow:rgba(252,93,194,.2)}
+body{font-family:"Manrope",system-ui,sans-serif;background:radial-gradient(ellipse 80vw 850px at 92% 4%,rgba(255,89,195,.17),transparent 65%),radial-gradient(ellipse 85vw 1000px at 5% 37%,rgba(185,83,248,.09),transparent 68%),#0b0710;}
+h1,h2,h3,.brand,.service h3,.step h3,.benefit h3,.trial-banner h3,.chat-head strong{font-family:"Syne",sans-serif!important}
+.hero{background:radial-gradient(ellipse 600px 560px at 87% 44%,rgba(255,115,202,.13),transparent 74%),linear-gradient(130deg,transparent 30%,rgba(213,89,191,.035));}
+.hero:after{background:radial-gradient(circle,rgba(255,83,180,.27),rgba(187,79,239,.08) 42%,transparent 67%)}
+.hero-copy h1{letter-spacing:-.06em}
+.hero-copy h1 em{background:linear-gradient(96deg,#ffa6da,#ea9dff 60%,#fbcaf0);-webkit-background-clip:text;background-clip:text}
+.section{position:relative}
+.section.dark-alt{background:radial-gradient(ellipse 620px 620px at 90% 22%,rgba(255,105,200,.065),transparent 70%),linear-gradient(180deg,#130d1a,#100a15)}
+#services{background:radial-gradient(ellipse 40% 45% at 1% 16%,rgba(255,96,199,.05),transparent 85%)}
+#contact{background:radial-gradient(ellipse 900px 750px at 80% 30%,rgba(255,97,190,.11),transparent 72%)}
+#faq{background:radial-gradient(ellipse 55% 70% at 0 58%,rgba(200,91,242,.06),transparent 77%),linear-gradient(180deg,#120c19,#0d0813)}
+.contact-panel{border-color:rgba(254,153,225,.38);box-shadow:0 24px 84px rgba(237,75,190,.08);background:linear-gradient(135deg,rgba(59,26,60,.75),rgba(18,10,25,.96))}
+.site-header{background:rgba(16,8,21,.87)}
+.brand{letter-spacing:.015em}
+.brand-mark{background:linear-gradient(145deg,#653276,#231128);border-color:#e797f7;box-shadow:inset 0 0 23px #793687,0 0 15px rgba(238,111,208,.19)}
+.brand .brand-copy{display:flex;flex-direction:column;gap:2px}
+.brand-copy .brand-main{font-size:17px;letter-spacing:.028em}
+.brand-copy .brand-meta{color:#dfa3e9;font:600 8px "JetBrains Mono",monospace;letter-spacing:.21em}
+.btn.primary{background:linear-gradient(105deg,#f4a3da,#dca5ff);color:#230d28;box-shadow:0 12px 38px rgba(239,102,196,.19)}
+.btn.primary:hover{background:linear-gradient(105deg,#ffc3e9,#ebc5ff)}
+.btn.secondary:hover{border-color:rgba(251,158,227,.63)}
+.pill{border-color:rgba(249,139,221,.35);color:#f6c8f0;background:rgba(249,96,204,.065)}
+.pill i{background:#f68fd0;box-shadow:0 0 13px #f68fd0}
+.accent{color:#e6a0f5}
+.orb{background:radial-gradient(circle at 40% 28%,rgba(255,165,221,.29),rgba(196,72,183,.10) 42%,transparent 67%)}
+.browser{border-color:rgba(255,168,227,.44);box-shadow:0 48px 85px #030107,0 0 70px rgba(247,102,202,.19)}
+.float-tag.first{color:#f7c6f0}
+.ticker b{color:#f1a6e5}
+.service:hover{border-color:#cf7cce;box-shadow:0 12px 40px rgba(255,118,216,.06)}
+.visual-web{background:radial-gradient(circle at 50% 80%,#72347f,#24112a 62%,#100a19)}
+.visual-video{background:linear-gradient(135deg,#25102b,#6a2c62 48%,#13091b)}
+.visual-social{background:radial-gradient(circle at 50% 15%,#723678,#1d1026 70%)}
+.trial-banner{background:radial-gradient(circle at 85% 0,rgba(255,125,210,.24),transparent 48%),linear-gradient(110deg,#1c1027,#271331);border-color:#be65b09c}
+.chat-launch{background:linear-gradient(135deg,#ff9dd6,#d6a5ff);color:#251128;border-color:#ffc4ec;box-shadow:0 16px 52px rgba(239,82,188,.36);font-size:22px}
+.chat-launch:hover{background:#ffb9e1}
+.chat{height:min(620px,80vh);width:min(425px,calc(100vw - 32px));background:#130c1b;border:1px solid rgba(255,164,227,.46);box-shadow:0 28px 110px rgba(0,0,0,.8),0 0 65px rgba(255,85,190,.14)}
+.chat-head{background:linear-gradient(115deg,#2a1531,#190f24);padding:17px 19px}
+.chat-head strong{font-size:16px;font-weight:800;letter-spacing:-.04em}
+.chat-head small{color:#d4bad4}
+.chat-avatar{width:41px;height:41px;flex-shrink:0;display:grid;place-items:center;border-radius:12px;background:linear-gradient(135deg,#ff9fd9,#b37aea);color:#27112c;font:800 14px "Syne",sans-serif;letter-spacing:-2px}
+.chat-headline{display:flex;align-items:center;gap:12px}
+.chat-status{font:500 10px "JetBrains Mono",monospace;color:#e6b9e6!important;margin-top:5px}
+.chat-status:before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:#9be0ac;margin-right:7px;box-shadow:0 0 10px #9be0ac}
+.chat-close{font-size:25px}
+.messages{padding:18px;gap:13px}
+.msg{font-size:13px;max-width:91%;line-height:1.7;white-space:pre-wrap}
+.msg.bot{background:#291a31;border-color:#503356}
+.msg.user{background:#efaddf;color:#231025}
+.chat-card{border:1px solid rgba(249,174,233,.29);background:linear-gradient(135deg,#321b36,#1d1124);border-radius:14px;padding:15px;display:grid;gap:9px;font-size:12px}
+.chat-card h4{font:700 16px "Syne";margin:0;color:#ffcef0}
+.chat-card p{margin:0;line-height:1.7;color:#dacadd}
+.chat-card ul{padding-left:18px;margin:0;color:#d5c2d7;line-height:1.8}
+.chat-card button{background:#eda9e4;color:#210f28;border:0;border-radius:10px;padding:11px 12px;font-weight:800;margin-top:2px}
+.suggestions{flex-wrap:wrap;overflow:visible}
+.suggestions button{border-color:#704873;background:#2e1c35}
+.suggestions button:hover{background:#4a2a51}
+.chat-form{background:#140c1b}
+.chat-form input{border-color:#734b78}
+.chat-form button{background:#efabdf;color:#29102d}
+.chat-note{font-size:10px;color:#b69cbe;margin:0 15px 12px;line-height:1.45}
+@media(max-width:570px){.brand-copy .brand-main{font-size:14px}.brand-copy .brand-meta{font-size:7px}.chat{max-height:77vh;height:555px}.chat-launch{bottom:16px;right:16px}}
+
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
 <div class="wrap nav">
-  <a class="brand" href="#top" aria-label="RepFrame Media home"><span class="brand-mark" aria-hidden="true">RF</span><span>REP<span>FRAME</span></span></a>
+  <a class="brand" href="#top" aria-label="RepFrame Media home"><span class="brand-mark" aria-hidden="true">RF</span><span class="brand-copy"><span class="brand-main">REP<span>FRAME</span></span><span class="brand-meta">MEDIA / CREATIVE STUDIO</span></span></a>
   <nav class="nav-links" aria-label="Main navigation"><a href="#services">Services</a><a href="#websites">Websites</a><a href="#approach">Our approach</a><a href="#faq">FAQ</a></nav>
   <div class="nav-actions"><a class="btn primary small" href="#contact" data-service="Website design">Start a project <span aria-hidden="true">↗</span></a></div>
   <details class="mobile-nav"><summary aria-label="Open navigation menu">☰</summary><nav class="mobile-dropdown" aria-label="Mobile navigation"><a href="#services">Services</a><a href="#websites">Websites</a><a href="#approach">Our approach</a><a href="#faq">FAQ</a><a href="#contact">Start a project</a></nav></details>
@@ -55,9 +120,9 @@ footer{padding:37px 0 50px;border-top:1px solid var(--line);background:#08070b}.
 <section class="hero" id="top">
 <div class="wrap hero-layout">
  <div class="hero-copy">
-   <div class="pill mono"><i aria-hidden="true"></i> INDEPENDENT CREATIVE STUDIO</div>
+   <div class="pill mono"><i aria-hidden="true"></i> REPFRAME MEDIA / CREATIVE STUDIO</div>
    <h1>Make your brand <em>impossible</em> to ignore.</h1>
-   <p>We create standout websites, scroll-stopping video ads, and content that makes your business look as good online as it does in real life.</p>
+   <p>RepFrame Media creates standout websites, scroll-stopping video ads, and content that makes your business look as good online as it does in real life.</p>
    <div class="hero-buttons">
      <a class="btn primary" href="#contact" data-service="Website design">Build my website <span aria-hidden="true">↗</span></a>
      <a class="btn secondary" href="#trial">Get a free 15-second ad <span aria-hidden="true">↗</span></a>
@@ -191,36 +256,170 @@ footer{padding:37px 0 50px;border-top:1px solid var(--line);background:#08070b}.
 </div>
 </section>
 </main>
-<footer><div class="wrap footer-grid"><div><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">RF</span><span>REP<span>FRAME</span></span></a><div class="footer-links"><a href="#services">Services</a><a href="#websites">Websites</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div></div><div class="footer-meta">INDEPENDENT CREATIVE STUDIO<br>AMSTERDAM · DALLAS–FORT WORTH<br>© 2026 REPFRAME MEDIA</div></div></footer>
-<button class="chat-launch" id="chatLaunch" type="button" aria-label="Open RepFrame website assistant" aria-expanded="false" aria-controls="chatPanel">✳</button>
-<aside class="chat" id="chatPanel" aria-label="RepFrame website assistant" aria-hidden="true">
- <div class="chat-head"><div><strong>RepFrame website assistant</strong><small>Automated answers to common questions</small></div><button class="chat-close" id="chatClose" type="button" aria-label="Close assistant">×</button></div>
- <div class="messages" id="messages" role="log" aria-live="polite"><div class="msg bot">Welcome! I can answer common questions about websites, ads, content and getting started. For a custom question, email the RepFrame team.</div></div>
- <div class="suggestions"><button type="button" data-question="Do you build websites?">Websites</button><button type="button" data-question="How does the free ad work?">Free ad</button><button type="button" data-question="What does it cost?">Pricing</button></div>
- <form class="chat-form" id="chatForm"><input id="chatInput" aria-label="Ask a question" autocomplete="off" placeholder="Ask a question…"><button type="submit">Send</button></form>
+<footer><div class="wrap footer-grid"><div><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">RF</span><span class="brand-copy"><span class="brand-main">REP<span>FRAME</span></span><span class="brand-meta">MEDIA / CREATIVE STUDIO</span></span></a><div class="footer-links"><a href="#services">Services</a><a href="#websites">Websites</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div></div><div class="footer-meta">INDEPENDENT CREATIVE STUDIO<br>AMSTERDAM · DALLAS–FORT WORTH<br>© 2026 REPFRAME MEDIA</div></div></footer>
+<button class="chat-launch" id="chatLaunch" type="button" aria-label="Open RepFrame Media studio assistant" aria-expanded="false" aria-controls="chatPanel">✦</button>
+<aside class="chat" id="chatPanel" aria-label="RepFrame Media studio assistant" aria-hidden="true">
+ <div class="chat-head"><div class="chat-headline"><div class="chat-avatar" aria-hidden="true">RF</div><div><strong>RepFrame Media Assistant</strong><small class="chat-status">Interactive project guide</small></div></div><button class="chat-close" id="chatClose" type="button" aria-label="Close assistant">×</button></div>
+ <div class="messages" id="messages" role="log" aria-live="polite"><div class="msg bot">Welcome to RepFrame Media. I can help plan a website, suggest ideas for your business, explain our creative services, or prepare a project inquiry. What are you working on?</div></div>
+ <div class="suggestions" id="suggestions" aria-label="Suggested questions">
+   <button type="button" data-question="Plan a website">Plan a website</button>
+   <button type="button" data-question="I want a free video ad">Free 15-sec ad</button>
+   <button type="button" data-question="What services do you offer?">Services</button>
+   <button type="button" data-question="What does a website cost?">Pricing</button>
+ </div>
+ <form class="chat-form" id="chatForm"><input id="chatInput" aria-label="Ask the RepFrame Media assistant" autocomplete="off" maxlength="500" placeholder="Tell us about your business…"><button type="submit">Send</button></form>
+ <p class="chat-note">Automated planning guide, not a live person or generative AI. Your chat stays on this page until you choose to draft an email.</p>
 </aside>
 <script>
 (function(){
-  const service=document.getElementById('service');
-  document.querySelectorAll('[data-service]').forEach(function(el){el.addEventListener('click',function(){service.value=el.getAttribute('data-service');});});
-  document.querySelectorAll('.mobile-dropdown a').forEach(function(el){el.addEventListener('click',function(){const d=document.querySelector('.mobile-nav');if(d)d.open=false;});});
-  document.getElementById('contactForm').addEventListener('submit',function(event){
-    event.preventDefault();
-    const data={name:document.getElementById('name').value.trim(),email:document.getElementById('email').value.trim(),business:document.getElementById('business').value.trim(),service:service.value,message:document.getElementById('message').value.trim()};
-    const subject='RepFrame project inquiry — '+data.business;
-    const body='Hello RepFrame Media,\n\nName: '+data.name+'\nEmail: '+data.email+'\nBusiness: '+data.business+'\nInterested in: '+data.service+'\n\nProject details:\n'+data.message+'\n\nKind regards,\n'+data.name;
-    window.location.href='mailto:info.repframemedia@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
-  });
-  const launch=document.getElementById('chatLaunch'),panel=document.getElementById('chatPanel'),close=document.getElementById('chatClose'),input=document.getElementById('chatInput'),messages=document.getElementById('messages');
-  function setChat(opened){panel.classList.toggle('open',opened);panel.setAttribute('aria-hidden',String(!opened));launch.setAttribute('aria-expanded',String(opened));if(opened){input.focus()}else{launch.focus()}}
-  launch.addEventListener('click',function(){setChat(!panel.classList.contains('open'))});
-  close.addEventListener('click',function(){setChat(false)});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&panel.classList.contains('open'))setChat(false)});
-  function answer(q){q=q.toLowerCase();if(/website|web design|site|domain/.test(q))return 'Yes. We design mobile-friendly websites with service or product information, galleries, and clear inquiry or booking paths. We can also discuss custom-domain options.';if(/free|trial|15.second/.test(q))return 'The free 15-second ad is a sample creative for your business. Choose “Free 15-second trial ad” in the contact form and tell us about your brand and available footage.';if(/cost|price|budget|quote/.test(q))return 'Each project is scoped separately. Send us what you need using the contact form to discuss a tailored quote.';if(/amsterdam|dallas|fort worth|location|based/.test(q))return 'RepFrame Media is based in Amsterdam and Dallas–Fort Worth. We can collaborate remotely with businesses elsewhere.';if(/book|contact|email|start|inquir/.test(q))return 'You can use the contact form on this page to open a pre-filled email, or email info.repframemedia@gmail.com directly.';if(/video|ad|reel|social|content/.test(q))return 'We work on short-form video ads, hooks, edits, product showcases and ongoing content. The best format depends on your business.';return 'I can help with common questions about websites, video ads, content, pricing and contacting the team. For specific details, email info.repframemedia@gmail.com.'}
-  function add(text,type){const div=document.createElement('div');div.className='msg '+type;div.textContent=text;messages.appendChild(div);messages.scrollTop=messages.scrollHeight}
-  function send(q){if(!q.trim())return;add(q,'user');add(answer(q),'bot')}
-  document.getElementById('chatForm').addEventListener('submit',function(e){e.preventDefault();const q=input.value;input.value='';send(q);input.focus()});
-  document.querySelectorAll('[data-question]').forEach(function(el){el.addEventListener('click',function(){send(el.getAttribute('data-question'))})});
+ "use strict";
+ const emailTo='info.repframemedia@gmail.com';
+ const service=document.getElementById('service');
+ document.querySelectorAll('[data-service]').forEach(el=>el.addEventListener('click',()=>{service.value=el.dataset.service;}));
+ document.querySelectorAll('.mobile-dropdown a').forEach(el=>el.addEventListener('click',()=>{document.querySelector('.mobile-nav').open=false;}));
+ document.getElementById('contactForm').addEventListener('submit',function(event){
+   event.preventDefault();
+   const data={name:document.getElementById('name').value.trim(),email:document.getElementById('email').value.trim(),business:document.getElementById('business').value.trim(),service:service.value,message:document.getElementById('message').value.trim()};
+   const subject='RepFrame project inquiry — '+data.business;
+   const body='Hello RepFrame Media,\n\nName: '+data.name+'\nEmail: '+data.email+'\nBusiness: '+data.business+'\nInterested in: '+data.service+'\n\nProject details:\n'+data.message+'\n\nKind regards,\n'+data.name;
+   window.location.href='mailto:'+emailTo+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+ });
+ const launch=document.getElementById('chatLaunch'),panel=document.getElementById('chatPanel'),close=document.getElementById('chatClose'),input=document.getElementById('chatInput'),messages=document.getElementById('messages'),suggestions=document.getElementById('suggestions');
+ const profile={goal:null,industry:null,feature:null,brand:null,brief:null,stage:null};
+ const industryData={
+   detailing:{name:'auto detailing',features:['Before-and-after gallery','Detailing packages and pricing','Instant quote request','Service-area information'],ad:'Show a satisfying before-and-after vehicle transformation.'},
+   beauty:{name:'salon or beauty studio',features:['Service and price menu','Booking links','Portfolio and client reviews','Staff or studio introduction'],ad:'Show a treatment or transformation with a simple booking call to action.'},
+   food:{name:'bakery or food business',features:['Product and menu gallery','Custom-order inquiry form','Pickup and catering information','Seasonal specials'],ad:'Make the preparation and finished products the centre of a short visual ad.'},
+   fitness:{name:'gym or fitness business',features:['Programs and membership information','Trainer introductions','Testimonials','Consultation or trial booking'],ad:'Introduce the coaching approach and invite viewers to book a consultation.'},
+   pet:{name:'pet grooming or pet services',features:['Services and prices','Before-and-after pet gallery','Booking requests','Trust and care information'],ad:'Show a friendly grooming transformation and invite owners to book.'},
+   home:{name:'home or property services',features:['Services and service area','Project photo gallery','Customer reviews','Quote request form'],ad:'Show a completed job or before-and-after result with a clear quote request.'},
+   retail:{name:'product or retail brand',features:['Product catalogue or gallery','Product descriptions','Ordering and shipping information','Customer reviews'],ad:'Show the product in action and direct viewers to the product page.'},
+   events:{name:'events or catering business',features:['Previous events gallery','Packages and services','Availability inquiries','Booking and contact details'],ad:'Highlight an event setup and invite customers to inquire about dates.'}
+ };
+ function matchIndustry(q){
+   const tests=[
+     ['detailing',/\b(detail|car wash|ceramic|auto wrap|tint|vehicle)\w*\b/i],
+     ['beauty',/\b(salon|barber|hair|lashes|eyebrow|brow|nail|wax|skincare|esthetic|beauty|makeup)\w*\b/i],
+     ['food',/\b(bak|cake|cookie|cupcake|pastr|dessert|food|restaurant|cafe|coffee|drink|soda|cater)\w*\b/i],
+     ['fitness',/\b(gym|fitness|trainer|pilates|yoga|workout|wellness|boxing)\w*\b/i],
+     ['pet',/\b(pet|dog|groom|animal|puppy)\w*\b/i],
+     ['home',/\b(clean|paint|landscap|contract|plumb|repair|roof|home service|property)\w*\b/i],
+     ['retail',/\b(ecommerce|e-commerce|shop|fashion|clothes|product|store|apparel|gift|handmade)\w*\b/i],
+     ['events',/\b(event|wedding|party|photo booth|party rental)\w*\b/i]
+   ];
+   return (tests.find(([,re])=>re.test(q))||[])[0]||null;
+ }
+ function setChat(opened){
+   panel.classList.toggle('open',opened);panel.setAttribute('aria-hidden',String(!opened));launch.setAttribute('aria-expanded',String(opened));
+   if(opened)input.focus();else launch.focus();
+ }
+ launch.addEventListener('click',()=>setChat(!panel.classList.contains('open')));
+ close.addEventListener('click',()=>setChat(false));
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&panel.classList.contains('open'))setChat(false)});
+ function add(text,type){
+   const div=document.createElement('div');div.className='msg '+type;div.textContent=text;messages.appendChild(div);messages.scrollTop=messages.scrollHeight;
+ }
+ function card(heading,body,items,cta){
+   const el=document.createElement('div');el.className='chat-card';
+   const h=document.createElement('h4');h.textContent=heading;el.append(h);
+   const p=document.createElement('p');p.textContent=body;el.append(p);
+   if(items&&items.length){const list=document.createElement('ul');items.forEach(t=>{const li=document.createElement('li');li.textContent=t;list.append(li)});el.append(list);}
+   if(cta){const b=document.createElement('button');b.type='button';b.textContent=cta;b.addEventListener('click',()=>transfer());el.append(b);}
+   messages.append(el);messages.scrollTop=messages.scrollHeight;
+ }
+ function choices(items){
+   suggestions.replaceChildren();
+   items.forEach(v=>{const b=document.createElement('button');b.type='button';b.dataset.question=v[1]||v[0];b.textContent=v[0];suggestions.appendChild(b);});
+ }
+ function transfer(){
+   const target=document.getElementById('contact'),msg=document.getElementById('message'),business=document.getElementById('business');
+   const chosen=profile.goal==='trial'?'Free 15-second trial ad':profile.goal==='video'?'Short-form video ads':profile.goal==='social'?'Social content':'Website design';
+   service.value=chosen;
+   if(profile.brand&&!business.value)business.value=profile.brand;
+   const lines=[
+     'Project brief prepared with the RepFrame Media assistant:',
+     'Interested in: '+chosen,
+     profile.industry?'Business type: '+industryData[profile.industry].name:null,
+     profile.feature?'Primary goal: '+profile.feature:null,
+     profile.brief?'Project notes: '+profile.brief:null,
+     'Please contact me to discuss next steps.'
+   ].filter(Boolean);
+   if(!msg.value.trim())msg.value=lines.join('\n');
+   setChat(false);
+   target.scrollIntoView({behavior:'smooth'});
+   document.getElementById(business.value?'name':'business').focus({preventScroll:true});
+ }
+ function presentPlan(){
+   const data=industryData[profile.industry];
+   const subject=profile.goal==='trial'?'15-second creative direction':profile.goal==='video'?'Short-form video direction':profile.goal==='social'?'Social content direction':'Suggested website structure';
+   const items=profile.goal==='trial'||profile.goal==='video'?[data.ad,'Keep the offer easy to understand','End with a clear next step']:profile.goal==='social'?['Product or service showcases','Real process and behind-the-scenes clips','Before-and-after or customer-focused posts']:data.features;
+   const body='For a '+data.name+', here’s a practical starting point'+(profile.feature?' focused on '+profile.feature.toLowerCase():'')+'. We would tailor this to your actual business after discussing your goals.';
+   card(subject,body,items,'Use this idea in my inquiry ↗');
+   add('Would you like to tell me your business name or add one specific goal? You can also transfer this brief into the contact form.','bot');
+   profile.stage='refining';choices([['Send this to RepFrame','Send my project brief'],['Add more details','My main goal is '],['Explore other services','What services do you offer?']]);
+ }
+ function parseIntent(q){
+   if(/\b(send|transfer|use|submit|contact|share)\b.*\b(brief|inquiry|team|repframe|idea|detail)|\b(let.s|ready to|i want to)\b.*\b(contact|send)|\b(send my project brief)\b/i.test(q))return 'transfer';
+   if(/\b(restart|start over|reset)\b/i.test(q))return 'reset';
+   if(/\b(price|pricing|cost|quote|expensive|how much|rate|budget|monthly|fee)\b/i.test(q))return 'pricing';
+   if(/\b(location|located|based|amsterdam|dallas|fort worth|work remotely|remote)\b/i.test(q))return 'location';
+   if(/\b(domain|hosting|seo|mobile|booking|ecommerce|shopify|payments|online store)\b/i.test(q))return 'technical';
+   if(/\b(free|trial|15.second|sample ad)\b/i.test(q))return 'trial';
+   if(/\b(reel|social media|instagram|tiktok|social content)\b/i.test(q))return 'social';
+   if(/\b(video|advertis|commercial|ad campaign|ad creative)\b/i.test(q))return 'video';
+   if(/\b(website|web design|site|landing page|redesign|build a web|plan a web)\b/i.test(q))return 'website';
+   if(/\b(services|offer|what do you do|what can you do)\b/i.test(q))return 'services';
+   if(/\b(email|call|phone|talk to|human|person|contact)\b/i.test(q))return 'contact';
+   return null;
+ }
+ function handle(text){
+   const q=text.trim();if(!q)return;
+   add(q,'user');
+   if(q.length>500){add('Could you shorten that to 500 characters?','bot');return;}
+   const inferred=matchIndustry(q);
+   if(inferred)profile.industry=inferred;
+   const intent=parseIntent(q);
+   if(intent==='reset'){Object.keys(profile).forEach(k=>profile[k]=null);add('Let’s start fresh. What would you like help with?','bot');choices([['Plan a website'],['Free 15-sec ad','I want a free 15-second ad'],['Our services','What services do you offer?']]);return;}
+   if(intent==='transfer'){if(!profile.goal)profile.goal='website';transfer();return;}
+   if(intent==='pricing'){add('RepFrame Media quotes each project based on scope. Website size, booking/ordering features, design complexity and existing content can affect price. We do not publish a fixed rate. If you tell me your business type, I can suggest a suitable starting scope.','bot');choices([['Plan a website'],['Contact the team','Send my project brief']]);return;}
+   if(intent==='location'){add('RepFrame Media is based in Amsterdam and Dallas–Fort Worth, and can collaborate remotely with businesses elsewhere. You can start a project from either location.','bot');choices([['Plan a website'],['Contact the team','Send my project brief']]);return;}
+   if(intent==='technical'){add('We can discuss mobile-friendly design, domain setup, booking links and website structure. Online payments, ecommerce integrations and ongoing hosting would need to be scoped for your project. What sort of business is your website for?','bot');profile.goal='website';profile.stage='industry';choices([['Auto detailing'],['Salon or beauty studio'],['Bakery or food business'],['Something else']]);return;}
+   if(intent==='services'){add('RepFrame Media works across three services: custom website design, short-form video ads, and social content. For local businesses, we usually start with the biggest gap—often a dedicated website, clearer bookings or a stronger visual portfolio.','bot');choices([['Plan a website'],['Free 15-sec ad','I want a free 15-second ad'],['Social content'],['Contact the team','Send my project brief']]);return;}
+   if(intent==='contact'){add('You can reach RepFrame Media at info.repframemedia@gmail.com. I can also bring a project brief into the contact form for you to review and email.','bot');choices([['Send a project inquiry','Send my project brief'],['Plan a website']]);return;}
+   if(intent==='website'||intent==='video'||intent==='trial'||intent==='social'){
+     profile.goal=intent;profile.stage='industry';
+     if(inferred){presentPlan();return;}
+     const question=intent==='trial'?'Great—the trial is a 15-second sample creative, with no obligation to buy more. What sort of business would the ad promote?':intent==='website'?'Great. To make this useful, what kind of business needs the website?':intent==='video'?'Let’s shape the creative around your customers. What kind of business are the videos for?':'What kind of business is the social content for?';
+     add(question,'bot');
+     choices([['Auto detailing'],['Salon or beauty studio'],['Bakery or food business'],['Gym or fitness'],['Pet services']]);return;
+   }
+   if(profile.stage==='industry'){
+     if(inferred){presentPlan();return;}
+     if(/\b(something else|other|not listed)\b/i.test(q)){add('No problem. Describe what your business sells or the service it provides, and I’ll help shape a brief.','bot');return;}
+     if(q.length>3){profile.brief=(profile.brief?profile.brief+' ':'')+q;add('Thanks. What is the main thing you want customers to do—book an appointment, order something, request a quote, or learn about your services?','bot');profile.stage='objective';choices([['Book appointments'],['Order products'],['Request a quote'],['Show my work']]);return;}
+   }
+   if(profile.stage==='objective'){
+     profile.feature=q;profile.stage='refining';
+     if(profile.industry){presentPlan();return;}
+     card('Your project direction','A strong starting point is a mobile-friendly page that explains what you offer and makes it simple to '+q.toLowerCase()+'.',['Clear headline and service overview','Brand visuals and a gallery','One prominent action button'],'Use this idea in my inquiry ↗');
+     choices([['Send this to RepFrame','Send my project brief'],['Add details','My business is ']]);return;
+   }
+   if(profile.stage==='refining'){
+     const name=q.match(/(?:my business is|we are called|brand is|business name is)\s+(.+)/i);
+     if(name){profile.brand=name[1].slice(0,80);add('Got it — '+profile.brand+'. I can include that name in your project inquiry. Anything important your future customers should know?','bot');choices([['Send my project brief'],['Add another detail','I want to highlight ']]);return;}
+     profile.brief=[profile.brief,q].filter(Boolean).join('\n').slice(0,900);
+     add('Thanks, I’ve added that to your draft brief. When you’re ready, I can put these details into the contact form so you can review and email the team.','bot');
+     choices([['Send my project brief'],['Show website ideas','Plan a website']]);return;
+   }
+   if(inferred){
+     profile.goal='website';profile.stage='refining';presentPlan();return;
+   }
+   if(/\b(hello|hi|hey|good morning)\b/i.test(q)){add('Hi! I can help you shape a website idea, video ad or social content plan. What would you like to create?','bot');choices([['Plan a website'],['Free 15-sec ad','I want a free 15-second ad'],['Services','What services do you offer?']]);return;}
+   add('I can guide you through websites, ad concepts and project briefs, but I’m not a live AI model. Tell me your business type or choose a topic below, and I’ll suggest the most useful next steps.','bot');
+   choices([['Plan a website'],['Free 15-sec ad','I want a free 15-second ad'],['Talk to the team','Send my project brief']]);
+ }
+ document.getElementById('chatForm').addEventListener('submit',function(e){e.preventDefault();const q=input.value;input.value='';handle(q);input.focus();});
+ suggestions.addEventListener('click',function(e){const b=e.target.closest('button[data-question]');if(b)handle(b.dataset.question);});
 })();
 </script>
 </body>
