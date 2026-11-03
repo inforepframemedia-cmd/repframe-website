@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://inforepframemedia-cmd.github.io/repframe-website/">
 <meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://inforepframemedia-cmd.github.io/repframe-website/">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="repframe-logo.webp" type="image/webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -224,13 +224,18 @@ footer{background:linear-gradient(120deg,#120b18,#180d1e 62%,#130a19)}
  body,.hero,.section.dark-alt,#services,.photo-showcase,#contact,#faq,footer{background:#09060d}
 }
 
+
+/* Original circular RepFrame Media emblem (previously generated logo) */
+.brand-logo{display:block;width:48px;height:48px;object-fit:cover;border-radius:50%;flex-shrink:0;border:1px solid rgba(224,143,255,.35);box-shadow:0 0 18px rgba(167,63,234,.20)}
+.chat-logo{display:block;width:41px;height:41px;object-fit:cover;border-radius:50%;flex-shrink:0;border:1px solid rgba(224,143,255,.5)}
+@media(max-width:570px){.brand-logo{width:42px;height:42px}}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
 <div class="wrap nav">
-  <a class="brand" href="#top" aria-label="RepFrame Media home"><span class="brand-mark" aria-hidden="true">RF</span><span class="brand-copy"><span class="brand-main">REP<span>FRAME</span></span><span class="brand-meta">MEDIA / CREATIVE STUDIO</span></span></a>
+  <a class="brand" href="#top" aria-label="RepFrame Media home"><img class="brand-logo" src="repframe-logo.webp" width="48" height="48" alt="" aria-hidden="true" decoding="async"><span class="brand-copy"><span class="brand-main">REP<span>FRAME</span></span><span class="brand-meta">MEDIA / CREATIVE STUDIO</span></span></a>
   <nav class="nav-links" aria-label="Main navigation"><a href="#services">Services</a><a href="#websites">Websites</a><a href="#approach">Our approach</a><a href="#faq">FAQ</a></nav>
   <div class="nav-actions"><a class="btn primary small" href="#contact" data-service="Website design">Start a project <span aria-hidden="true">↗</span></a></div>
   <details class="mobile-nav"><summary aria-label="Open navigation menu">☰</summary><nav class="mobile-dropdown" aria-label="Mobile navigation"><a href="#services">Services</a><a href="#websites">Websites</a><a href="#approach">Our approach</a><a href="#faq">FAQ</a><a href="#contact">Start a project</a></nav></details>
@@ -397,14 +402,14 @@ footer{background:linear-gradient(120deg,#120b18,#180d1e 62%,#130a19)}
 </div>
 </section>
 </main>
-<footer><div class="wrap footer-grid"><div><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">RF</span><span class="brand-copy"><span class="brand-main">REP<span>FRAME</span></span><span class="brand-meta">MEDIA / CREATIVE STUDIO</span></span></a><div class="footer-links"><a href="#services">Services</a><a href="#websites">Websites</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div></div><div class="footer-meta">INDEPENDENT CREATIVE STUDIO<br>AMSTERDAM · DALLAS–FORT WORTH<br>© 2026 REPFRAME MEDIA</div></div></footer>
+<footer><div class="wrap footer-grid"><div><a class="brand" href="#top"><img class="brand-logo" src="repframe-logo.webp" width="48" height="48" alt="" aria-hidden="true" decoding="async"><span class="brand-copy"><span class="brand-main">REP<span>FRAME</span></span><span class="brand-meta">MEDIA / CREATIVE STUDIO</span></span></a><div class="footer-links"><a href="#services">Services</a><a href="#websites">Websites</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div></div><div class="footer-meta">INDEPENDENT CREATIVE STUDIO<br>AMSTERDAM · DALLAS–FORT WORTH<br>© 2026 REPFRAME MEDIA</div></div></footer>
 
 <div id="readingProgress" aria-hidden="true"></div>
 <button class="back-to-top" id="backToTop" type="button" hidden>↑ Back to top</button>
 
 <button class="chat-launch" id="chatLaunch" type="button" aria-label="Open RepFrame Media studio assistant" aria-expanded="false" aria-controls="chatPanel">✦</button>
 <aside class="chat" id="chatPanel" aria-label="RepFrame Media studio assistant" aria-hidden="true">
- <div class="chat-head"><div class="chat-headline"><div class="chat-avatar" aria-hidden="true">RF</div><div><strong>RepFrame Media Assistant</strong><small class="chat-status">Interactive project guide</small></div></div><button class="chat-close" id="chatClose" type="button" aria-label="Close assistant">×</button></div>
+ <div class="chat-head"><div class="chat-headline"><img class="chat-logo" src="repframe-logo.webp" width="41" height="41" alt="" aria-hidden="true" decoding="async"><div><strong>RepFrame Media Assistant</strong><small class="chat-status">Interactive project guide</small></div></div><button class="chat-close" id="chatClose" type="button" aria-label="Close assistant">×</button></div>
  <div class="messages" id="messages" role="log" aria-live="polite"><div class="msg bot">Welcome to RepFrame Media. I can help plan a website, suggest ideas for your business, explain our creative services, or prepare a project inquiry. What are you working on?</div></div>
  <div class="suggestions" id="suggestions" aria-label="Suggested questions">
    <button type="button" data-question="Plan a website">Plan a website</button>
