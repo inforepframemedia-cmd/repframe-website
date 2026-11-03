@@ -163,99 +163,20 @@ h1,h2,h3,.brand,.brand-main,.service h3,.benefit h3,.step h3,.trial-banner h3,.c
 @media(prefers-reduced-motion:reduce){.photo-tile-image img,.photo-tile-image{transition:none!important}.photo-tile:hover img{transform:none!important}}
 
 
-/* ACCESSIBILITY: visitors can tailor readability while preserving the gallery */
-[hidden]{display:none!important}
+
+/* Usable defaults, without a floating accessibility settings button */
 :where(a,button,input,select,textarea,summary):focus-visible{outline:3px solid #ffe5fa!important;outline-offset:4px!important}
 :where(a,button):focus-visible{box-shadow:0 0 0 6px rgba(238,132,214,.23)}
 html{scroll-padding-top:96px}
 [id]{scroll-margin-top:96px}
 #readingProgress{position:fixed;z-index:90;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,#ff9fd6,#d495ff);transform:scaleX(0);transform-origin:0 50%;pointer-events:none;box-shadow:0 0 16px rgba(255,113,208,.6)}
-.access-launch{position:fixed;left:20px;bottom:20px;z-index:60;border:1px solid rgba(255,211,243,.65);background:linear-gradient(135deg,#e79edb,#c398f4);color:#291130;border-radius:16px;padding:12px 16px;display:inline-flex;align-items:center;gap:9px;box-shadow:0 11px 42px #050209ae;font-size:13px;font-weight:800;min-height:48px}
-.access-launch:hover{background:#ffd0ed}
-.access-launch .access-icon{display:inline-grid;place-items:center;background:rgba(53,16,58,.13);width:23px;height:23px;border-radius:50%;font-size:17px}
-.access-panel{position:fixed;left:20px;bottom:86px;z-index:62;width:min(370px,calc(100vw - 40px));max-height:min(620px,75dvh);overflow:auto;background:#191020;border:1px solid #c48acb;border-radius:22px;box-shadow:0 27px 95px #000e,0 0 48px rgba(236,94,185,.15);color:#fff8fc;padding:22px}
-.access-panel-header{display:flex;align-items:start;justify-content:space-between;gap:16px}
-.access-panel h2{font:650 23px/1.18 "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:-.025em;margin:7px 0 8px}
-.access-panel-desc{color:#e2d0e5;line-height:1.65;font-size:13px;margin:0 0 18px}
-.access-panel .eyebrow{color:#f6bdec}
-.access-close{width:38px;height:38px;flex:none;display:grid;place-items:center;border:1px solid #7a597c;border-radius:11px;background:#29182f;color:#fff;font-size:24px;line-height:1}
-.access-options{display:grid;grid-template-columns:1fr 1fr;gap:11px}
-.access-option{min-height:98px;text-align:left;border:1px solid #59415e;border-radius:14px;padding:14px 13px;background:#27182e;color:#fff7ff;display:flex;flex-direction:column;justify-content:space-between;gap:8px;line-height:1.35}
-.access-option:hover{border-color:#e5addb;background:#36223e}
-.access-option[aria-pressed="true"]{background:#4e2d53;border-color:#ffaedc;box-shadow:inset 0 0 0 1px #ffaedc}
-.access-option .opt-label{font-size:13px;font-weight:750}
-.access-option .opt-state{font-size:12px;color:#e7cde7;min-height:16px}
-.access-option .opt-glyph{font-size:20px;color:#ffb6e5}
-.access-reset{width:100%;min-height:44px;border-radius:11px;border:1px solid #7f5a83;color:#fbe6f8;background:transparent;font-weight:700;margin-top:13px;font-size:12px}
-.access-reset:hover{background:#35213a}
-.access-status{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
-.back-to-top{position:fixed;z-index:59;left:20px;bottom:81px;border:1px solid rgba(235,169,227,.55);border-radius:12px;background:#2b1835;color:#ffe3f5;padding:11px 15px;min-height:42px;font-size:12px;font-weight:800;box-shadow:0 12px 32px #0502098f}
+.back-to-top{position:fixed;z-index:59;left:20px;bottom:20px;border:1px solid rgba(235,169,227,.55);border-radius:12px;background:#2b1835;color:#ffe3f5;padding:11px 15px;min-height:44px;font-size:12px;font-weight:800;box-shadow:0 12px 32px #0502098f}
 .back-to-top:hover{background:#4a2754}
-html[data-text-size="large"]{--reader-extra:2px}
-html[data-text-size="extra"]{--reader-extra:4px}
-html:not([data-text-size]){--reader-extra:0px}
-html[data-text-size="normal"]{--reader-extra:0px}
-html[data-text-size] .hero-copy>p{font-size:calc(17px + var(--reader-extra))!important}
-html[data-text-size] .section-desc,
-html[data-text-size] .showcase-copy p,
-html[data-text-size] .about-copy p,
-html[data-text-size] .contact-copy p{font-size:calc(15px + var(--reader-extra))!important}
-html[data-text-size] .service p,
-html[data-text-size] .service ul,
-html[data-text-size] .benefit p,
-html[data-text-size] .step p,
-html[data-text-size] .faq details p,
-html[data-text-size] .faq summary,
-html[data-text-size] .field input,
-html[data-text-size] .field textarea,
-html[data-text-size] .field select,
-html[data-text-size] .photo-text p,
-html[data-text-size] .chat .msg{font-size:calc(14px + var(--reader-extra))!important}
-html[data-text-size] .nav-links,
-html[data-text-size] .field label,
-html[data-text-size] .footer-links{font-size:calc(13px + var(--reader-extra))!important}
-html[data-text-size] .eyebrow,
-html[data-text-size] .service-index{font-size:calc(11px + var(--reader-extra))!important}
-body.access-contrast{--muted:#f2eaf3;--soft:#e0d2e3;--line:rgba(255,255,255,.5);--violet:#ffcdf2;--text:#fff}
-body.access-contrast .service,
-body.access-contrast .step,
-body.access-contrast .benefit,
-body.access-contrast .faq details{border-color:rgba(255,255,255,.65);background-color:#0c0612}
-body.access-contrast .section-desc,
-body.access-contrast .hero-copy p,
-body.access-contrast .service p,
-body.access-contrast .service ul,
-body.access-contrast .benefit p,
-body.access-contrast .step p,
-body.access-contrast .faq details p,
-body.access-contrast .contact-copy p,
-body.access-contrast .about-copy p,
-body.access-contrast .showcase-copy p,
-body.access-contrast .form-note{color:#fff!important}
-body.access-contrast .site-header,
-body.access-contrast .contact-panel{background:#0b0612;border-color:#fff}
-body.access-contrast .btn.primary{background:#ffdcf6;color:#14071d;box-shadow:none}
-body.access-contrast .btn.secondary{background:#12091d;border-color:#fff}
-body.access-contrast .field input,
-body.access-contrast .field textarea,
-body.access-contrast .field select{border-color:#fff;background:#08040c}
-body.access-links a:not(.brand){text-decoration:underline!important;text-underline-offset:.24em;text-decoration-thickness:2px}
-body.access-links a.btn{text-decoration:underline!important}
-body.motion-off{scroll-behavior:auto}
-body.motion-off *,body.motion-off *::before,body.motion-off *::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}
-body.motion-off.scroll-reveal-ready .scroll-reveal{opacity:1!important;transform:none!important}
-body.motion-off .photo-tile:hover img{transform:none!important}
-body.motion-off .btn:hover,body.motion-off .service:hover{transform:none!important}
-@media(max-width:570px){
-.access-launch{left:12px;bottom:12px;padding:11px 13px;min-height:46px}
-.access-panel{left:12px;bottom:73px;width:calc(100vw - 24px);max-height:75dvh;padding:17px}
-.back-to-top{left:12px;bottom:69px}
-}
+@media(max-width:570px){.back-to-top{left:12px;bottom:12px}}
 @media(prefers-reduced-motion:reduce){
 body.scroll-reveal-ready .scroll-reveal{opacity:1!important;transform:none!important}
 html{scroll-behavior:auto!important}
 }
-
 </style>
 </head>
 <body>
@@ -432,22 +353,6 @@ html{scroll-behavior:auto!important}
 <footer><div class="wrap footer-grid"><div><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">RF</span><span class="brand-copy"><span class="brand-main">REP<span>FRAME</span></span><span class="brand-meta">MEDIA / CREATIVE STUDIO</span></span></a><div class="footer-links"><a href="#services">Services</a><a href="#websites">Websites</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div></div><div class="footer-meta">INDEPENDENT CREATIVE STUDIO<br>AMSTERDAM · DALLAS–FORT WORTH<br>© 2026 REPFRAME MEDIA</div></div></footer>
 
 <div id="readingProgress" aria-hidden="true"></div>
-<button type="button" class="access-launch" id="accessLaunch" aria-label="Open accessibility and reading settings" aria-controls="accessPanel" aria-expanded="false"><span class="access-icon" aria-hidden="true">✳</span><span>Accessibility</span></button>
-<section class="access-panel" id="accessPanel" role="region" aria-labelledby="accessPanelTitle" hidden>
-  <div class="access-panel-header">
-    <div><div class="eyebrow">MAKE IT YOURS</div><h2 id="accessPanelTitle">Reading settings</h2></div>
-    <button class="access-close" type="button" id="accessClose" aria-label="Close accessibility settings">×</button>
-  </div>
-  <p class="access-panel-desc">Adjust the site for a more comfortable experience. Your settings are saved on this device.</p>
-  <div class="access-options" role="group" aria-label="Display and reading preferences">
-    <button type="button" class="access-option" id="prefText" aria-label="Text size: standard. Activate to make text bigger."><span class="opt-glyph" aria-hidden="true">A+</span><span class="opt-label">Text size</span><span class="opt-state" id="prefTextState">Standard</span></button>
-    <button type="button" class="access-option" id="prefContrast" aria-pressed="false"><span class="opt-glyph" aria-hidden="true">◐</span><span class="opt-label">High contrast</span><span class="opt-state" id="prefContrastState">Off</span></button>
-    <button type="button" class="access-option" id="prefLinks" aria-pressed="false"><span class="opt-glyph" aria-hidden="true">↗</span><span class="opt-label">Underline links</span><span class="opt-state" id="prefLinksState">Off</span></button>
-    <button type="button" class="access-option" id="prefMotion" aria-pressed="false"><span class="opt-glyph" aria-hidden="true">◎</span><span class="opt-label">Reduce motion</span><span class="opt-state" id="prefMotionState">Off</span></button>
-  </div>
-  <button type="button" class="access-reset" id="accessReset">Reset preferences</button>
-  <p class="access-status" id="accessStatus" role="status" aria-live="polite"></p>
-</section>
 <button class="back-to-top" id="backToTop" type="button" hidden>↑ Back to top</button>
 
 <button class="chat-launch" id="chatLaunch" type="button" aria-label="Open RepFrame Media studio assistant" aria-expanded="false" aria-controls="chatPanel">✦</button>
@@ -634,98 +539,24 @@ html{scroll-behavior:auto!important}
 <script>
 (function(){
   "use strict";
-  const launch=document.getElementById('accessLaunch');
-  const panel=document.getElementById('accessPanel');
-  const close=document.getElementById('accessClose');
-  const status=document.getElementById('accessStatus');
-  const textButton=document.getElementById('prefText');
-  const contrastButton=document.getElementById('prefContrast');
-  const linksButton=document.getElementById('prefLinks');
-  const motionButton=document.getElementById('prefMotion');
-  const reset=document.getElementById('accessReset');
   const progress=document.getElementById('readingProgress');
-  const top=document.getElementById('backToTop');
-  const storageKey='repframe-reading-preferences-v1';
-  const defaults={text:'normal',contrast:false,links:false,motion:false};
-  let preferences={...defaults};
-  try{
-    const prior=JSON.parse(localStorage.getItem(storageKey)||'null');
-    if(prior && typeof prior==='object'){
-      if(['normal','large','extra'].includes(prior.text))preferences.text=prior.text;
-      for(const k of ['contrast','links','motion'])if(typeof prior[k]==='boolean')preferences[k]=prior[k];
-    }
-  }catch(error){/* Storage may be unavailable; controls still work this visit. */}
-  const states={normal:'Standard',large:'Large',extra:'Extra large'};
-  function applyPrefs(message){
-    document.documentElement.dataset.textSize=preferences.text;
-    document.body.classList.toggle('access-contrast',preferences.contrast);
-    document.body.classList.toggle('access-links',preferences.links);
-    document.body.classList.toggle('motion-off',preferences.motion);
-    textButton.querySelector('.opt-state').textContent=states[preferences.text];
-    textButton.setAttribute('aria-label','Text size: '+states[preferences.text]+'. Activate to change the text size.');
-    for(const [key,button] of [['contrast',contrastButton],['links',linksButton],['motion',motionButton]]){
-      button.setAttribute('aria-pressed',String(preferences[key]));
-      document.getElementById('pref'+key[0].toUpperCase()+key.slice(1)+'State').textContent=preferences[key]?'On':'Off';
-    }
-    try{localStorage.setItem(storageKey,JSON.stringify(preferences))}catch(error){}
-    if(message)status.textContent=message;
-  }
-  function closePanel(){
-    panel.hidden=true;
-    launch.setAttribute('aria-expanded','false');
-    launch.setAttribute('aria-label','Open accessibility and reading settings');
-    launch.focus();
-  }
-  function openPanel(){
-    panel.hidden=false;
-    launch.setAttribute('aria-expanded','true');
-    launch.setAttribute('aria-label','Close accessibility and reading settings');
-    close.focus();
-  }
-  launch.addEventListener('click',()=>{
-    if(panel.hidden)openPanel();else closePanel();
-  });
-  close.addEventListener('click',closePanel);
-  document.addEventListener('keydown',(event)=>{
-    if(event.key==='Escape'&&!panel.hidden){event.preventDefault();closePanel();}
-  });
-  textButton.addEventListener('click',()=>{
-    preferences.text=preferences.text==='normal'?'large':preferences.text==='large'?'extra':'normal';
-    applyPrefs('Text size changed to '+states[preferences.text]+'.');
-  });
-  contrastButton.addEventListener('click',()=>{
-    preferences.contrast=!preferences.contrast;
-    applyPrefs('High contrast '+(preferences.contrast?'enabled.':'disabled.'));
-  });
-  linksButton.addEventListener('click',()=>{
-    preferences.links=!preferences.links;
-    applyPrefs('Underlined links '+(preferences.links?'enabled.':'disabled.'));
-  });
-  motionButton.addEventListener('click',()=>{
-    preferences.motion=!preferences.motion;
-    applyPrefs('Reduced motion '+(preferences.motion?'enabled.':'disabled.')+' Your device motion setting is always respected.');
-  });
-  reset.addEventListener('click',()=>{
-    preferences={...defaults};
-    applyPrefs('Reading settings restored to defaults.');
-  });
+  const topButton=document.getElementById('backToTop');
+  if(!progress||!topButton)return;
   let ticking=false;
   function updateScroll(){
     ticking=false;
-    const max=Math.max(1,document.documentElement.scrollHeight-window.innerHeight);
-    const ratio=Math.max(0,Math.min(1,window.scrollY/max));
+    const maximum=Math.max(1,document.documentElement.scrollHeight-window.innerHeight);
+    const ratio=Math.max(0,Math.min(1,window.scrollY/maximum));
     progress.style.transform='scaleX('+ratio+')';
-    top.hidden=window.scrollY<650;
+    topButton.hidden=window.scrollY<650;
   }
   window.addEventListener('scroll',()=>{
     if(!ticking){ticking=true;requestAnimationFrame(updateScroll);}
   },{passive:true});
   window.addEventListener('resize',updateScroll,{passive:true});
-  top.addEventListener('click',()=>{
-    const reduce=preferences.motion||window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    window.scrollTo({top:0,behavior:reduce?'instant':'smooth'});
+  topButton.addEventListener('click',()=>{
+    window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
   });
-  applyPrefs('');
   updateScroll();
 })();
 </script>
