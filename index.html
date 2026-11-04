@@ -337,6 +337,102 @@ footer{background:linear-gradient(120deg,#120b18,#180d1e 62%,#130a19)}
 @media(max-width:570px){.nav{gap:8px}.brand-copy .brand-meta{display:none}.nav-actions .btn{font-size:11px;padding:9px 11px;min-height:38px}.visual-hero{height:345px}.mock-laptop{top:15%;left:0;width:91%}.mock-content{height:200px}.mock-headline{top:65px;gap:7px}.mock-headline strong{font-size:30px}.mock-headline small{font-size:7px}.mock-nav{padding:13px;font-size:9px}.mock-nav small{display:none}.mock-car{height:120px}.mock-phone{width:112px;height:234px;right:-1%;bottom:0;border-width:4px;border-radius:20px}.phone-slide{padding:29px 9px 20px}.phone-slide strong{font-size:21px}.mock-note{font-size:7px;bottom:-5%}.hero-trust{font-size:10px;gap:9px}.concept-grid{grid-template-columns:1fr}.concept-card:last-child{grid-column:auto}.concept-scene{height:385px}.concept-disclaimer{flex-direction:column;gap:10px}.about-art{min-height:300px}.compact-steps{display:grid;grid-template-columns:1fr}.compact-steps .step,.compact-steps .step:last-child{border:0;border-bottom:1px solid #785675}.mobile-free-cta{display:inline-flex;position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:39;background:#e9a9e5;color:#240b26;border:1px solid #fff0ff;border-radius:99px;padding:11px 18px;font-weight:800;font-size:12px;box-shadow:0 10px 35px #000a}.chat-launch{bottom:76px}.back-to-top{bottom:77px}body{padding-bottom:58px}}
 @media(prefers-reduced-motion:reduce){.phone-slide{animation:none!important;opacity:0!important}.phone-slide-one{opacity:1!important}}
 
+
+/* RepFrame assistant — editorial frosted-glass studio treatment */
+.chat-launch{
+  position:fixed;right:25px;bottom:26px;z-index:45;
+  display:inline-flex;align-items:center;justify-content:space-between;gap:10px;
+  width:auto;height:57px;min-height:57px;min-width:183px;
+  padding:7px 14px 7px 8px;
+  border-radius:999px;border:1px solid rgba(255,194,237,.64);
+  background:linear-gradient(115deg,#e9b5e9 0%,#f7d0ed 52%,#d9a2ef 100%);
+  color:#29142c;box-shadow:0 12px 33px #0c0412cc,0 0 0 5px rgba(239,136,224,.07),0 0 30px rgba(255,112,213,.22);
+  font-family:Inter,Arial,sans-serif;font-size:12px;font-weight:800;letter-spacing:-.01em;
+  transition:transform .25s ease,box-shadow .25s ease,filter .25s ease;
+}
+.chat-launch:hover{background:linear-gradient(115deg,#ffd9f3,#f5c9f0,#e7c1ff);transform:translateY(-3px);box-shadow:0 18px 43px #0c0412e0,0 0 45px rgba(249,125,213,.28)}
+.chat-launch:active{transform:translateY(0)}
+.chat-launch-spark{width:40px;height:40px;display:grid;place-items:center;border-radius:50%;background:#2f183b;color:#f7c1f2;font-size:20px;box-shadow:inset 0 0 17px #995ba159;flex:none}
+.chat-launch-arrow{font-size:17px;font-weight:500;opacity:.65}
+.chat-launch-label{white-space:nowrap}
+.chat{
+  position:fixed;z-index:46;right:25px;bottom:98px;
+  display:none;flex-direction:column;isolation:isolate;
+  width:min(430px,calc(100vw - 32px));height:min(620px,calc(100dvh - 140px));
+  max-height:calc(100dvh - 125px);
+  border:1px solid rgba(252,180,232,.42);border-radius:25px;
+  background:linear-gradient(165deg,rgba(38,21,48,.98),rgba(19,10,29,.99) 34%,rgba(18,9,26,.99));
+  box-shadow:0 25px 90px rgba(3,1,8,.82),0 0 0 1px rgba(234,148,222,.08),0 0 74px rgba(239,97,189,.17);
+  overflow:hidden;backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);
+}
+.chat::before{content:"";position:absolute;z-index:-1;pointer-events:none;inset:0;background:radial-gradient(ellipse 350px 260px at 104% 6%,rgba(231,111,208,.18),transparent 75%)}
+.chat.open{display:flex;animation:studioOpen .25s cubic-bezier(.2,.75,.2,1) both}
+@keyframes studioOpen{from{opacity:0;transform:translateY(12px) scale(.975)}to{opacity:1;transform:translateY(0) scale(1)}}
+.chat-topline{min-height:28px;padding:8px 20px 6px;display:flex;align-items:center;justify-content:space-between;gap:8px;background:#2d1933;border-bottom:1px solid rgba(255,207,246,.15);color:#ecbfe6;font:700 9px/1.25 Inter,Arial,sans-serif;letter-spacing:.115em}
+.chat-topline i{font-size:12px;color:#ffd0fa;font-style:normal;padding-left:4px}
+.chat-head{padding:16px 18px 17px;background:linear-gradient(115deg,rgba(54,29,63,.88),rgba(33,17,43,.78));border-bottom:1px solid rgba(254,198,238,.14);gap:10px}
+.chat-headline{display:flex;align-items:center;gap:11px;min-width:0}
+.chat-logo{width:46px;height:46px;object-fit:cover;flex-shrink:0;border-radius:14px;border:1px solid rgba(251,190,239,.59);box-shadow:0 0 24px rgba(224,111,213,.2)}
+.chat-heading-copy{min-width:0}
+.chat-head strong{font:700 18px/1.15 "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:-.035em;color:#fff2fc}
+.chat-head small{display:block;font:600 10px/1.4 Inter,Arial,sans-serif;color:#d6bfd7;margin-top:6px}
+.chat-status::before{background:#edaddd!important;box-shadow:0 0 10px #edaddd!important}
+.chat-close{display:grid;place-items:center;flex-shrink:0;width:36px;height:36px;border:1px solid rgba(245,191,230,.29);border-radius:11px;background:rgba(255,226,247,.06);font:400 23px/1 Inter,Arial,sans-serif;color:#ebcfea}
+.chat-close:hover{background:rgba(255,218,240,.15);color:#fff}
+.messages{flex:1;min-height:0;padding:17px 18px 20px;gap:14px;scroll-behavior:smooth;scrollbar-width:thin;scrollbar-color:#80528a transparent}
+.messages::-webkit-scrollbar{width:6px}.messages::-webkit-scrollbar-thumb{background:#704278;border-radius:9px}
+.chat-intro{position:relative;overflow:hidden;flex-shrink:0;padding:18px 20px 20px;border:1px solid rgba(249,189,237,.28);border-radius:18px;background:linear-gradient(137deg,rgba(75,40,81,.84),rgba(46,25,57,.95) 59%,rgba(30,18,42,.98));box-shadow:inset 0 1px 0 rgba(255,233,249,.11)}
+.chat-intro::before{content:"";position:absolute;width:230px;height:230px;top:-125px;right:-115px;border-radius:50%;border:1px solid rgba(251,180,232,.35);box-shadow:0 0 0 21px rgba(255,163,228,.045),0 0 0 55px rgba(255,163,228,.025);pointer-events:none}
+.chat-intro-art{position:absolute;right:17px;top:15px;display:grid;place-items:center;width:69px;height:69px;border:1px solid rgba(255,193,237,.18);border-radius:18px;transform:rotate(9deg);background:radial-gradient(circle at 30% 20%,rgba(248,178,235,.37),rgba(125,65,146,.18) 60%,rgba(30,13,43,.5));color:#ffdafa}
+.chat-intro-art span{font-size:43px;line-height:1}.chat-intro-art i{position:absolute;bottom:6px;right:8px;font:700 9px Inter,Arial,sans-serif;color:#ffe9fa;letter-spacing:-.03em}
+.chat-intro-tag{font:750 9px/1.4 Inter,Arial,sans-serif;letter-spacing:.14em;color:#f1bce9;margin-bottom:12px;position:relative}
+.chat-intro h3{position:relative;font:650 29px/.98 "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:-.048em;color:#fff7ff;margin:0 0 12px}
+.chat-intro h3 em{font-style:normal;color:#f5b9ea}
+.chat-intro p{position:relative;max-width:265px;color:#e4d0e5;font:500 12px/1.75 Inter,Arial,sans-serif;margin:0}
+.msg{max-width:89%;padding:12px 15px;border-radius:15px;font:500 12px/1.75 Inter,Arial,sans-serif;letter-spacing:0;word-wrap:break-word;overflow-wrap:anywhere}
+.msg.bot{align-self:flex-start;background:rgba(48,30,58,.87);border:1px solid rgba(231,175,221,.27);border-bottom-left-radius:5px;color:#f5eaf6;box-shadow:inset 0 1px 0 rgba(255,255,255,.04)}
+.msg.user{align-self:flex-end;background:linear-gradient(128deg,#f5c8ed,#dcabe9);border:1px solid #fce5ff;border-bottom-right-radius:5px;color:#28152e;font-weight:600;box-shadow:0 5px 18px #0004}
+.chat-card{max-width:95%;border:1px solid rgba(249,196,237,.37);border-radius:16px;background:linear-gradient(145deg,rgba(74,39,81,.92),rgba(33,20,45,.98));padding:17px;gap:10px;box-shadow:inset 0 1px 0 #f9d1f30e}
+.chat-card h4{font:700 16px "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:-.02em;color:#ffd5f2}
+.chat-card p,.chat-card li{font:500 12px/1.65 Inter,Arial,sans-serif;color:#eee0f1}
+.chat-card button{min-height:41px;border-radius:11px;border:1px solid #ffdcf8;background:linear-gradient(110deg,#f1bedf,#e3b9f5);color:#2e1836;font:800 12px Inter,Arial,sans-serif;padding:10px 12px}
+.chat-card button:hover{filter:brightness(1.08)}
+.chat-bottom{flex-shrink:0;border-top:1px solid rgba(255,211,241,.17);background:linear-gradient(180deg,#1e1229,#170d20);padding:13px 16px 12px}
+.chat-suggestions-label{display:flex;align-items:center;justify-content:space-between;color:#c7b0d0;font:750 9px Inter,Arial,sans-serif;letter-spacing:.15em;margin-bottom:10px;padding:0 1px}
+.chat-suggestions-label span:last-child{color:#dface1;font-size:13px}
+.suggestions{display:flex;flex-wrap:wrap;gap:7px;max-height:100px;overflow:auto;padding:0 1px 11px;scrollbar-width:thin}
+.suggestions button{white-space:normal;padding:9px 12px;min-height:36px;max-width:100%;border:1px solid rgba(231,174,224,.36);border-radius:10px;background:rgba(73,43,82,.6);color:#f2e0f4;font:650 11px/1.3 Inter,Arial,sans-serif;text-align:left;transition:background .17s,border-color .17s}
+.suggestions button::after{content:"↗";margin-left:8px;opacity:.75}
+.suggestions button:hover{background:rgba(115,63,123,.6);border-color:#f1b9e6}
+.suggestions button:first-child{color:#2b1930;border-color:#efc9ef;background:#ebc1eb;font-weight:800}
+.suggestions button:first-child:hover{background:#ffe0f6}
+.chat-form{display:block;padding:0;border:0;background:transparent}
+.chat-input-label{display:block;font:700 9px Inter,Arial,sans-serif;letter-spacing:.12em;color:#ccbad1;margin:1px 0 8px 1px}
+.chat-input-row{display:flex;align-items:center;gap:7px;padding:5px;background:#0e0816;border:1px solid #805985;border-radius:15px;transition:box-shadow .2s,border-color .2s}
+.chat-input-row:focus-within{border-color:#ffc7ed;box-shadow:0 0 0 3px rgba(237,149,228,.16)}
+.chat-form input{height:40px;flex:1;min-width:0;border:0!important;outline:0!important;box-shadow:none!important;padding:9px 10px;background:transparent;color:white;font:500 12px Inter,Arial,sans-serif}
+.chat-form input::placeholder{color:#b5a3b8}
+.chat-form button{display:grid;place-items:center;flex-shrink:0;width:39px;height:39px;min-width:39px;padding:0;border-radius:11px;background:linear-gradient(140deg,#f1c4ed,#d99aef);color:#2f1635;font:800 22px Inter,Arial,sans-serif;box-shadow:0 5px 13px rgba(196,100,187,.25)}
+.chat-form button:hover{background:#ffddf7}
+.chat-note{margin:10px 1px 0;color:#c0abc7;font:500 10px/1.55 Inter,Arial,sans-serif}
+@media(max-width:570px){
+.chat-launch{width:auto;min-width:164px;height:51px;min-height:51px;bottom:78px;right:13px;padding:5px 12px 5px 6px;font-size:11px}
+.chat-launch-spark{width:38px;height:38px}
+.chat{right:10px;left:10px;bottom:142px;width:auto;height:min(595px,calc(100dvh - 160px));max-height:calc(100dvh - 160px);border-radius:21px}
+.chat-topline{padding:8px 15px;font-size:8px}
+.chat-head{padding:11px 14px 13px}
+.messages{padding:13px 13px 16px}
+.chat-intro{padding:14px 15px 16px}
+.chat-intro h3{font-size:26px}
+.chat-intro-art{width:58px;height:58px;right:13px}
+.chat-intro-art span{font-size:35px}
+.chat-bottom{padding:11px 13px 12px}
+.chat-suggestions-label{margin-bottom:8px}
+.suggestions{padding-bottom:8px;max-height:83px}
+.chat-note{font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){.chat.open{animation:none!important}.chat-launch,.chat-launch:hover,.suggestions button{transition:none!important;transform:none!important}.messages{scroll-behavior:auto!important}}
+
 </style>
 </head>
 <body>
@@ -466,18 +562,50 @@ footer{background:linear-gradient(120deg,#120b18,#180d1e 62%,#130a19)}
 <div id="readingProgress" aria-hidden="true"></div>
 <button class="back-to-top" id="backToTop" type="button" hidden>↑ Back to top</button>
 
-<button class="chat-launch" id="chatLaunch" type="button" aria-label="Open RepFrame Media studio assistant" aria-expanded="false" aria-controls="chatPanel">✦</button>
+
+<button class="chat-launch" id="chatLaunch" type="button" aria-label="Open RepFrame studio assistant" aria-expanded="false" aria-controls="chatPanel">
+  <span class="chat-launch-spark" aria-hidden="true">✦</span>
+  <span class="chat-launch-label">Ask RepFrame</span>
+  <span class="chat-launch-arrow" aria-hidden="true">↗</span>
+</button>
 <aside class="chat" id="chatPanel" aria-label="RepFrame Media studio assistant" aria-hidden="true">
- <div class="chat-head"><div class="chat-headline"><img class="chat-logo" src="repframe-logo.webp" width="41" height="41" alt="" aria-hidden="true" decoding="async"><div><strong>RepFrame Media Assistant</strong><small class="chat-status">Interactive project guide</small></div></div><button class="chat-close" id="chatClose" type="button" aria-label="Close assistant">×</button></div>
- <div class="messages" id="messages" role="log" aria-live="polite"><div class="msg bot">Welcome to RepFrame Media. I can help plan a website, suggest ideas for your business, explain our creative services, or prepare a project inquiry. What are you working on?</div></div>
- <div class="suggestions" id="suggestions" aria-label="Suggested questions">
-   <button type="button" data-question="Plan a website">Plan a website</button>
-   <button type="button" data-question="I want a free video ad">Free 15-sec ad</button>
-   <button type="button" data-question="What services do you offer?">Services</button>
-   <button type="button" data-question="What does a website cost?">Pricing</button>
- </div>
- <form class="chat-form" id="chatForm"><input id="chatInput" aria-label="Ask the RepFrame Media assistant" autocomplete="off" maxlength="500" placeholder="Tell us about your business…"><button type="submit">Send</button></form>
- <p class="chat-note">Automated planning guide, not a live person or generative AI. Your chat stays on this page until you choose to draft an email.</p>
+  <div class="chat-topline" aria-hidden="true"><span>RF / STUDIO DESK</span><span>CREATIVE INQUIRIES <i>✦</i></span></div>
+  <div class="chat-head">
+    <div class="chat-headline">
+      <img class="chat-logo" src="repframe-logo.webp" width="44" height="44" alt="" aria-hidden="true" decoding="async">
+      <div class="chat-heading-copy">
+        <strong>RepFrame Studio</strong>
+        <small class="chat-status">Automated project guide</small>
+      </div>
+    </div>
+    <button class="chat-close" id="chatClose" type="button" aria-label="Close studio assistant">×</button>
+  </div>
+  <div class="messages" id="messages" role="log" aria-live="polite" aria-relevant="additions">
+    <div class="chat-intro">
+      <div class="chat-intro-art" aria-hidden="true"><span>✳</span><i>RF.</i></div>
+      <div class="chat-intro-tag">WELCOME TO OUR STUDIO</div>
+      <h3>What can we create<br><em>for you?</em></h3>
+      <p>Explore website ideas, short-form ads, or turn your business goals into a project brief.</p>
+    </div>
+    <div class="msg bot">Tell me a little about your business, or choose a starting point below.</div>
+  </div>
+  <div class="chat-bottom">
+    <div class="chat-suggestions-label"><span>QUICK START</span><span aria-hidden="true">✦</span></div>
+    <div class="suggestions" id="suggestions" aria-label="Suggested questions">
+      <button type="button" data-question="Plan a website">Plan a website</button>
+      <button type="button" data-question="I want a free video ad">Free 15-sec ad</button>
+      <button type="button" data-question="What services do you offer?">Our services</button>
+      <button type="button" data-question="What does a website cost?">Pricing</button>
+    </div>
+    <form class="chat-form" id="chatForm">
+      <label for="chatInput" class="chat-input-label">YOUR MESSAGE</label>
+      <div class="chat-input-row">
+        <input id="chatInput" aria-label="Message RepFrame automated studio assistant" autocomplete="off" maxlength="500" placeholder="Tell us what you have in mind…">
+        <button type="submit" aria-label="Send message to studio guide"><span aria-hidden="true">↗</span></button>
+      </div>
+    </form>
+    <p class="chat-note">Automated guide, not a live person or generative AI. Nothing is sent to our team until you submit the contact form.</p>
+  </div>
 </aside>
 <script>
 (function(){
