@@ -17,7 +17,7 @@
 <link rel="icon" href="repframe-logo.webp" type="image/webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <title>RepFrame Media | Web Design, Video Ads & Creative Studio</title>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"RepFrame Media","url":"https://inforepframemedia-cmd.github.io/repframe-website/","email":"info.repframemedia@gmail.com","description":"Creative studio offering web design, short-form video ads, and social content.","areaServed":[{"@type":"Place","name":"Amsterdam, Netherlands"},{"@type":"Place","name":"Dallas–Fort Worth, Texas, United States"}],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Creative services","itemListElement":[{"@type":"OfferCatalog","name":"Website design"},{"@type":"OfferCatalog","name":"Short-form video advertising"},{"@type":"OfferCatalog","name":"Social content production"}]}}
@@ -433,13 +433,54 @@ footer{background:linear-gradient(120deg,#120b18,#180d1e 62%,#130a19)}
 }
 @media(prefers-reduced-motion:reduce){.chat.open{animation:none!important}.chat-launch,.chat-launch:hover,.suggestions button{transition:none!important;transform:none!important}.messages{scroll-behavior:auto!important}}
 
+
+/* RepFrame custom futuristic typography lockup */
+.site-header .brand,
+footer .brand{display:inline-flex;align-items:center;gap:13px;flex-shrink:0;text-decoration:none}
+.site-header .brand .brand-copy,
+footer .brand .brand-copy{display:flex;flex-direction:column;align-items:flex-start;gap:4px;min-width:0}
+.site-header .brand-main,
+footer .brand-main{
+  display:inline-flex;align-items:baseline;
+  font-family:"Chakra Petch","Arial Narrow",Arial,sans-serif!important;
+  font-size:23px!important;font-weight:700!important;font-style:italic;
+  line-height:1!important;letter-spacing:-.052em!important;
+  white-space:nowrap;transform:skewX(-3deg);
+  filter:drop-shadow(0 0 8px rgba(247,162,247,.12));
+}
+.site-header .brand .brand-rep,footer .brand .brand-rep{color:#fff8ff!important}
+.site-header .brand .brand-frame,footer .brand .brand-frame{
+  color:#eeb9ff!important;
+  background:linear-gradient(108deg,#f8b8f2 0%,#d6a0ff 52%,#a56aff 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.site-header .brand-meta,footer .brand-meta{
+  display:flex!important;align-items:center;gap:8px;
+  font-family:Inter,Arial,sans-serif!important;
+  color:#d7b9dc!important;font-size:8px!important;font-weight:700!important;
+  line-height:1.3;letter-spacing:.155em!important;white-space:nowrap;
+}
+.site-header .brand-meta-dot,footer .brand-meta-dot{
+  display:inline-block;flex-shrink:0;width:3px;height:3px;
+  background:#f2a8e8;border-radius:50%;box-shadow:0 0 7px rgba(250,165,242,.75);
+}
+.site-header .brand-logo,footer .brand-logo{
+  height:51px;width:51px;box-shadow:0 0 0 2px rgba(203,127,255,.08),0 0 23px rgba(184,66,228,.22);
+  transition:box-shadow .2s ease;
+}
+.site-header .brand:hover .brand-logo,footer .brand:hover .brand-logo{box-shadow:0 0 0 2px rgba(223,144,255,.23),0 0 30px rgba(204,84,237,.36)}
+@media(max-width:1000px){.site-header .brand-main{font-size:19px!important}.site-header .brand-meta{font-size:7px!important;letter-spacing:.1em!important}.site-header .brand-logo{height:46px;width:46px}}
+@media(max-width:570px){.site-header .brand,footer .brand{gap:8px}.site-header .brand-main{font-size:17px!important}.site-header .brand-meta{display:flex!important;font-size:6px!important;gap:5px;letter-spacing:.06em!important}.site-header .brand-logo{height:39px;width:39px}.site-header .nav{gap:9px}.nav-actions .btn{font-size:10px}}
+@media(max-width:375px){.site-header .brand-main{font-size:15px!important}.site-header .brand-meta{font-size:5.5px!important}.site-header .brand-logo{height:36px;width:36px}.nav-actions .btn{padding:8px}}
+@media(prefers-reduced-motion:reduce){.site-header .brand-logo,footer .brand-logo{transition:none}}
+
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="site-header"><div class="wrap nav">
-<a class="brand" href="#top" aria-label="RepFrame Media home"><img class="brand-logo" src="repframe-logo.webp" width="48" height="48" alt=""><span class="brand-copy"><span class="brand-main">REP<span>FRAME</span></span><span class="brand-meta">MEDIA / CREATIVE STUDIO</span></span></a>
+<a class="brand" href="#top" aria-label="RepFrame Media home"><img class="brand-logo" src="repframe-logo.webp" width="48" height="48" alt=""><span class="brand-copy"><span class="brand-main"><span class="brand-rep">REP</span><span class="brand-frame">FRAME</span></span><span class="brand-meta">MEDIA <span class="brand-meta-dot" aria-hidden="true"></span> CREATIVE STUDIO</span></span></a>
 <nav class="nav-links" aria-label="Main navigation"><a href="#services">Services</a><a href="#examples">Work</a><a href="#about">About</a><a href="#process">Process</a><a href="#contact">Contact</a></nav>
 <div class="nav-actions"><a class="btn primary small" href="#contact" data-service="Website design">Start a project ↗</a></div>
 <details class="mobile-nav"><summary aria-label="Open navigation menu">☰</summary><nav class="mobile-dropdown" aria-label="Mobile navigation"><a href="#services">Services</a><a href="#examples">Work</a><a href="#about">About</a><a href="#process">Process</a><a href="#faq">FAQ</a><a href="#contact">Start a project</a></nav></details>
@@ -557,7 +598,7 @@ footer{background:linear-gradient(120deg,#120b18,#180d1e 62%,#130a19)}
 </form></div></div></section>
 </main>
 
-<footer><div class="wrap footer-grid"><div><a class="brand" href="#top"><img class="brand-logo" src="repframe-logo.webp" width="48" height="48" alt=""><span class="brand-copy"><span class="brand-main">REP<span>FRAME</span></span><span class="brand-meta">MEDIA / CREATIVE STUDIO</span></span></a><div class="footer-links"><a href="#services">Services</a><a href="#examples">Work</a><a href="#about">About</a><a href="#contact">Contact</a></div></div><div class="footer-meta">AMSTERDAM · DALLAS–FORT WORTH<br><a href="mailto:info.repframemedia@gmail.com">info.repframemedia@gmail.com</a><br>© 2026 REPFRAME MEDIA</div></div></footer>
+<footer><div class="wrap footer-grid"><div><a class="brand" href="#top"><img class="brand-logo" src="repframe-logo.webp" width="48" height="48" alt=""><span class="brand-copy"><span class="brand-main"><span class="brand-rep">REP</span><span class="brand-frame">FRAME</span></span><span class="brand-meta">MEDIA <span class="brand-meta-dot" aria-hidden="true"></span> CREATIVE STUDIO</span></span></a><div class="footer-links"><a href="#services">Services</a><a href="#examples">Work</a><a href="#about">About</a><a href="#contact">Contact</a></div></div><div class="footer-meta">AMSTERDAM · DALLAS–FORT WORTH<br><a href="mailto:info.repframemedia@gmail.com">info.repframemedia@gmail.com</a><br>© 2026 REPFRAME MEDIA</div></div></footer>
 <a href="#contact" data-service="Free 15-second trial ad" class="mobile-free-cta">Get a free ad ↗</a>
 <div id="readingProgress" aria-hidden="true"></div>
 <button class="back-to-top" id="backToTop" type="button" hidden>↑ Back to top</button>
