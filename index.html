@@ -10,7 +10,7 @@
 <meta property="og:title" content="RepFrame Media — Make Your Brand Impossible to Ignore">
 <meta property="og:description" content="Distinctive websites, short-form video ads and digital content for businesses ready for a stronger online presence.">
 <meta property="og:url" content="https://inforepframemedia-cmd.github.io/repframe-website/">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">\n<meta property="og:image" content="https://inforepframemedia-cmd.github.io/repframe-website/repframe-logo.webp">\n<meta name="twitter:image" content="https://inforepframemedia-cmd.github.io/repframe-website/repframe-logo.webp">
 <link rel="canonical" href="https://inforepframemedia-cmd.github.io/repframe-website/">
 <link rel="icon" href="repframe-logo.webp" type="image/webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -229,89 +229,169 @@ footer{background:linear-gradient(120deg,#120b18,#180d1e 62%,#130a19)}
 .brand-logo{display:block;width:48px;height:48px;object-fit:cover;border-radius:50%;flex-shrink:0;border:1px solid rgba(224,143,255,.35);box-shadow:0 0 18px rgba(167,63,234,.20)}
 .chat-logo{display:block;width:41px;height:41px;object-fit:cover;border-radius:50%;flex-shrink:0;border:1px solid rgba(224,143,255,.5)}
 @media(max-width:570px){.brand-logo{width:42px;height:42px}}
+
+/* Portfolio concepts, stronger mobile CTA, and visual studio design */
+.nav-links{gap:23px}.nav-actions .btn{white-space:nowrap}
+.hero-trust{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:#ead7ea;font-weight:650;margin-top:19px}
+.visual-hero{overflow:visible;isolation:isolate;height:560px}
+.mock-laptop{position:absolute;top:15%;left:-4%;width:94%;z-index:2;transform:rotate(-4deg);filter:drop-shadow(0 30px 45px #000b)}
+.mock-window{padding:8px 8px 0;border:1px solid #bf8dd38c;border-radius:13px 13px 4px 4px;background:#100b15}
+.mock-toolbar{display:flex;justify-content:space-between;color:#ac91b1;font-size:9px;padding:7px 10px;background:#271629;border-radius:5px 5px 0 0}
+.mock-content{height:290px;position:relative;overflow:hidden;background:radial-gradient(circle at 80% 80%,#70387e,#281536 45%,#0d0b13 85%);color:white}
+.mock-nav{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:3;padding:19px;font:700 12px Inter}
+.mock-nav i{color:#e5a0ef;font-style:normal}.mock-nav small{font-size:8px;color:#e3d0e7}
+.mock-headline{display:flex;flex-direction:column;align-items:flex-start;position:absolute;top:80px;left:22px;z-index:3;gap:11px}
+.mock-headline small{font-size:9px;color:#e7b0f1;font-weight:700;letter-spacing:.13em}
+.mock-headline strong{font:700 46px/.97 "Helvetica Neue",Arial,sans-serif;letter-spacing:-.045em}
+.mock-headline em{background:#edbaf3;color:#190b1f;padding:10px 12px;border-radius:5px;font-size:10px;font-style:normal;font-weight:800}
+.mock-car{position:absolute;bottom:25px;right:-10%;width:65%;height:177px;transform:rotate(-8deg)}
+.car-roof{position:absolute;width:70%;height:45%;border-top:17px solid #996aa8;border-radius:90% 85% 0 0;bottom:37%;left:12%}
+.car-body{position:absolute;inset:auto 0 10px;height:100px;border-radius:65% 20% 14% 14%;background:linear-gradient(#c19bca,#432750 55%,#090610);box-shadow:0 0 42px #d776e97d}
+.car-highlight{position:absolute;right:6%;bottom:55px;background:#f8d8ff;width:53px;height:7px;border-radius:60%;box-shadow:0 0 20px #eab4ff}
+.mock-bottom{position:absolute;left:20px;bottom:8px;color:#d9b1de;font:600 7px Inter;letter-spacing:.12em;z-index:4}
+.laptop-foot{width:108%;height:10px;transform:translateX(-4%);background:linear-gradient(#8a7b92,#41364b);border-radius:0 0 50% 50%}
+.mock-phone{position:absolute;right:1%;bottom:4%;width:176px;height:336px;border-radius:27px;border:6px solid #4f3658;z-index:4;background:#160c22;overflow:hidden;transform:rotate(7deg);box-shadow:0 24px 52px #000b}
+.phone-notch{width:53px;height:12px;position:absolute;top:0;left:50%;transform:translateX(-50%);z-index:5;background:#180c21;border-radius:0 0 10px 10px}
+.phone-frames{height:100%;position:relative;overflow:hidden}
+.phone-slide{position:absolute;inset:0;padding:38px 14px 32px;display:flex;flex-direction:column;justify-content:space-between;opacity:0;animation:phoneConcept 12s ease-in-out infinite;background:radial-gradient(circle at 40% 60%,#ae5bb7,#3e1c62 46%,#190e26)}
+.phone-slide-two{animation-delay:4s;background:radial-gradient(circle at 70% 60%,#d672af,#56245c 46%,#140a20)}
+.phone-slide-three{animation-delay:8s;background:radial-gradient(circle at 30% 65%,#b97ee4,#492077 46%,#140a20)}
+.phone-slide small,.phone-slide span{font-size:8px;font-weight:700;letter-spacing:.1em;color:#eed0f3}
+.phone-slide strong{font:800 31px/.94 "Helvetica Neue",Arial,sans-serif;letter-spacing:-.06em}
+@keyframes phoneConcept{0%,5%{opacity:0;transform:scale(1.06)}9%,30%{opacity:1;transform:scale(1)}34%,100%{opacity:0;transform:scale(1.05)}}
+.phone-base{position:absolute;bottom:5px;left:0;right:0;text-align:center;font-size:8px;color:#f4cff1}
+.mock-note{position:absolute;bottom:-1%;right:7%;font-size:9px;color:#dbc0e4;letter-spacing:.1em}
+.service p{min-height:0}.service-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.service-tags span{font-size:10px;padding:7px 9px;background:#302039;border:1px solid #795783;border-radius:8px;color:#f1d9ef}
+.service ul{display:none}
+.concepts-section{background:radial-gradient(circle at 70% 42%,rgba(244,105,201,.13),transparent 55%),#130b1a;overflow:hidden}
+.concept-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.concept-card{border:1px solid #8058868f;border-radius:21px;overflow:hidden;background:#1b1024;min-width:0;transition:transform .25s,border-color .25s}
+.concept-card:hover{transform:translateY(-5px);border-color:#dba6e6}
+.concept-scene{height:400px;position:relative;overflow:hidden;padding:20px;background:#271634}
+.concept-chip{position:relative;z-index:4;display:inline-block;padding:8px 11px;background:#1a1029d9;border:1px solid #d1a9de7a;border-radius:99px;color:white;font-size:9px;letter-spacing:.1em;font-weight:700}
+.concept-copy{padding:25px}
+.concept-copy>span{font-size:10px;letter-spacing:.12em;color:#e5b8eb;font-weight:700}
+.concept-copy h3{margin:13px 0;font:650 25px "Helvetica Neue",Arial,sans-serif;letter-spacing:-.035em}
+.concept-copy p{color:#d1bed8;font-size:13px;line-height:1.7;margin:0}
+.detailer-scene{background:radial-gradient(circle at 70% 60%,#63316b,#160d21 75%)}
+.compare-frame{--split:54%;position:absolute;top:90px;left:18px;right:18px;height:234px;overflow:hidden;border:1px solid #e6c3e8a1;border-radius:9px;box-shadow:0 15px 44px #0008}
+.compare-old,.compare-new{position:absolute;inset:0}
+.compare-old{background:#efeeee;color:#222}
+.compare-old header{padding:14px;background:#dfdfdf;font:bold 13px Arial}
+.compare-old main{padding:25px 15px;font:13px Arial}
+.compare-old strong{font-size:20px}.compare-old p{color:#666;font-size:12px}.compare-old main span{border:1px solid #999;padding:7px}
+.compare-new{clip-path:inset(0 calc(100% - var(--split)) 0 0);color:white;background:radial-gradient(circle at 80% 75%,#7f4387,#1e1428 70%)}
+.compare-new header{padding:14px;display:flex;justify-content:space-between;font:800 12px Inter}
+.compare-new header small{font-size:7px}.compare-new main{padding:21px 15px;display:flex;flex-direction:column;align-items:flex-start;gap:11px;position:relative}
+.compare-new main small{font-size:8px;color:#efc0ef}.compare-new strong{font:750 28px/.95 Inter;letter-spacing:-.05em;position:relative;z-index:2}
+.compare-new main span{background:#e5b5ec;color:#27122f;padding:8px;font-size:9px;font-weight:800;position:relative;z-index:2}
+.compare-auto{position:absolute;width:160px;height:66px;bottom:21px;right:-20px;border-radius:80% 30% 10% 10%;background:linear-gradient(#db98ef,#422052 65%,#160e1e);transform:rotate(-10deg);box-shadow:0 0 28px #edbafa99}
+.compare-boundary{position:absolute;top:0;bottom:0;left:var(--split);width:3px;background:white;box-shadow:0 0 12px #fff;transform:translateX(-50%)}
+.compare-boundary span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#f1d8f7;color:#29152f;font-size:17px}
+.compare-label{display:flex;justify-content:space-between;font-size:11px;color:#f6d7f4;margin-top:294px}
+#comparisonSlider{width:100%;accent-color:#eface8;cursor:ew-resize;margin:9px 0}
+.salon-scene{background:radial-gradient(circle at 50% 40%,#9a648e,#351d3e 67%,#170d1e)}
+.salon-phone{width:189px;height:330px;border:7px solid #2f2130;border-radius:27px;background:#ebd8db;color:#372831;position:absolute;left:50%;bottom:-5px;transform:translateX(-50%) rotate(-5deg);overflow:hidden;box-shadow:0 18px 40px #000a}
+.salon-top{display:flex;justify-content:space-between;padding:19px 14px 12px;font-size:11px}
+.salon-photo{height:113px;background:radial-gradient(circle at 60% 40%,#d4a0a3,#a96c79 60%,#644053)}
+.salon-portrait{position:relative;width:82px;height:132px;top:24px;left:50%;transform:translateX(-50%);background:linear-gradient(90deg,#432333,#8c4b5b,#452432);border-radius:65% 65% 12% 12%}
+.salon-copy{position:relative;background:#f1e6e5;min-height:167px;padding:16px 12px}
+.salon-copy small{font-size:7px;color:#815d74;font-weight:750}.salon-copy strong{display:block;font:650 22px/.98 Georgia,serif;margin:7px 0}
+.salon-copy p{font-size:9px;color:#69515e}.salon-copy span{display:inline-block;background:#593c52;color:white;padding:9px;font-size:7px}
+.bakery-scene{background:radial-gradient(circle at 50% 60%,#98768f,#51364f 58%,#24142c)}
+.bakery-screen{background:#f6e7d6;color:#3e3035;position:absolute;left:7%;right:7%;top:83px;height:261px;transform:rotate(-3deg);box-shadow:0 22px 40px #0009;overflow:hidden;border-radius:9px}
+.bakery-top{display:flex;justify-content:space-between;align-items:start;padding:20px 18px;font-size:12px}
+.bakery-top small{font-size:7px}
+.bakery-copy{padding:15px 18px;position:relative;z-index:2}.bakery-copy small{font-size:8px;color:#9c6169}
+.bakery-copy strong{display:block;font:650 28px/1 Georgia,serif;margin:12px 0}
+.bakery-copy span{display:inline-block;padding:8px;background:#5f4247;color:white;font-size:8px}
+.pastry-art{position:absolute;right:-20px;bottom:0;width:150px;height:150px;transform:rotate(-13deg)}
+.pastry-art i{position:absolute;width:90px;height:90px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#f9d5a0,#b97353 60%,#6b3f36);box-shadow:0 8px 10px #6b35334d}
+.pastry-art i:nth-child(2){top:40px;left:49px}.pastry-art i:nth-child(3){top:80px;left:2px}
+.concept-disclaimer{border-top:1px solid var(--line);margin-top:26px;padding-top:20px;display:flex;justify-content:space-between;gap:23px;font-size:12px;color:#cdbbd2}
+.concept-disclaimer a{color:#ffd4f1;font-weight:750;white-space:nowrap}
+.studio-about{background:radial-gradient(circle at 80% 40%,#b355aa1a,transparent 65%),#160d1d}
+.about-grid{display:grid;grid-template-columns:1fr .85fr;gap:8%;align-items:center}
+.about-grid p{font-size:15px;color:#d5c4dd;line-height:1.8}
+.about-grid h2{font-size:clamp(40px,4.8vw,66px);letter-spacing:-.05em;margin:20px 0}
+.about-grid .btn{margin-top:20px}
+.about-art{min-height:355px;display:grid;place-items:center;background:radial-gradient(circle,#803a814a,#1c1125 70%);border:1px solid #ad75b456;border-radius:25px;position:relative}
+.about-ring{width:260px;height:260px;border:1px solid #d998d188;border-radius:50%;display:grid;place-items:center;position:relative;box-shadow:0 0 40px #a855be2b}
+.about-ring img{border-radius:50%;box-shadow:0 0 35px #c472e64f}
+.ring-a,.ring-b{position:absolute;left:50%;white-space:nowrap;transform:translateX(-50%);color:#ecb6e6;font:750 10px Inter;letter-spacing:.14em}
+.ring-a{top:-8px;background:#251529;padding:0 11px}.ring-b{bottom:-8px;background:#251529;padding:0 11px}
+.process-section .compact-steps{position:relative;gap:0;border-top:1px solid #8e6488;margin-top:51px}
+.compact-steps .step{border:0;border-right:1px solid #7f587e;background:transparent;border-radius:0;padding:26px 24px}
+.compact-steps .step:last-child{border-right:0}
+.compact-steps .step h3{margin:14px 0 8px}
+.contact-form-intro h3{font:700 30px "Helvetica Neue",Arial,sans-serif;margin:0}
+.contact-form-intro p{font-size:13px;color:#ceb7d0;margin:8px 0 25px}
+.optional-label{font-weight:400;color:#b8a4be}
+.form-honey{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+.mobile-free-cta{display:none}
+@media(max-width:1050px){.hero-layout{grid-template-columns:1fr 1fr}.mock-laptop{left:-10%;width:100%}.mock-phone{right:-8%}.concept-grid{gap:10px}.concept-scene{padding:12px}.compare-frame{left:11px;right:11px}}
+@media(max-width:850px){.hero-layout{grid-template-columns:1fr}.visual-hero{height:470px;width:min(580px,100%);margin:auto}.mock-laptop{left:2%;width:84%}.mock-phone{right:1%}.concept-grid{grid-template-columns:1fr 1fr}.concept-card:last-child{grid-column:1/-1}.about-grid{grid-template-columns:1fr}.nav-actions .btn{display:inline-flex}.nav-links{display:none}}
+@media(max-width:570px){.nav{gap:8px}.brand-copy .brand-meta{display:none}.nav-actions .btn{font-size:11px;padding:9px 11px;min-height:38px}.visual-hero{height:345px}.mock-laptop{top:15%;left:0;width:91%}.mock-content{height:200px}.mock-headline{top:65px;gap:7px}.mock-headline strong{font-size:30px}.mock-headline small{font-size:7px}.mock-nav{padding:13px;font-size:9px}.mock-nav small{display:none}.mock-car{height:120px}.mock-phone{width:112px;height:234px;right:-1%;bottom:0;border-width:4px;border-radius:20px}.phone-slide{padding:29px 9px 20px}.phone-slide strong{font-size:21px}.mock-note{font-size:7px;bottom:-5%}.hero-trust{font-size:10px;gap:9px}.concept-grid{grid-template-columns:1fr}.concept-card:last-child{grid-column:auto}.concept-scene{height:385px}.concept-disclaimer{flex-direction:column;gap:10px}.about-art{min-height:300px}.compact-steps{display:grid;grid-template-columns:1fr}.compact-steps .step,.compact-steps .step:last-child{border:0;border-bottom:1px solid #785675}.mobile-free-cta{display:inline-flex;position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:39;background:#e9a9e5;color:#240b26;border:1px solid #fff0ff;border-radius:99px;padding:11px 18px;font-weight:800;font-size:12px;box-shadow:0 10px 35px #000a}.chat-launch{bottom:76px}.back-to-top{bottom:77px}body{padding-bottom:58px}}
+@media(prefers-reduced-motion:reduce){.phone-slide{animation:none!important;opacity:0!important}.phone-slide-one{opacity:1!important}}
+
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-header">
-<div class="wrap nav">
-  <a class="brand" href="#top" aria-label="RepFrame Media home"><img class="brand-logo" src="repframe-logo.webp" width="48" height="48" alt="" aria-hidden="true" decoding="async"><span class="brand-copy"><span class="brand-main">REP<span>FRAME</span></span><span class="brand-meta">MEDIA / CREATIVE STUDIO</span></span></a>
-  <nav class="nav-links" aria-label="Main navigation"><a href="#services">Services</a><a href="#websites">Websites</a><a href="#approach">Our approach</a><a href="#faq">FAQ</a></nav>
-  <div class="nav-actions"><a class="btn primary small" href="#contact" data-service="Website design">Start a project <span aria-hidden="true">↗</span></a></div>
-  <details class="mobile-nav"><summary aria-label="Open navigation menu">☰</summary><nav class="mobile-dropdown" aria-label="Mobile navigation"><a href="#services">Services</a><a href="#websites">Websites</a><a href="#approach">Our approach</a><a href="#faq">FAQ</a><a href="#contact">Start a project</a></nav></details>
-</div>
-</header>
-<main id="main">
-<section class="hero" id="top">
-<div class="wrap hero-layout">
- <div class="hero-copy">
-   <div class="pill mono"><i aria-hidden="true"></i> REPFRAME MEDIA / CREATIVE STUDIO</div>
-   <h1>Make your brand <em>impossible</em> to ignore.</h1>
-   <p>RepFrame Media creates standout websites, scroll-stopping video ads, and content that makes your business look as good online as it does in real life.</p>
-   <div class="hero-buttons">
-     <a class="btn primary" href="#contact" data-service="Website design">Build my website <span aria-hidden="true">↗</span></a>
-     <a class="btn secondary" href="#trial">Get a free 15-second ad <span aria-hidden="true">↗</span></a>
-   </div>
-   <div class="hero-note">BASED IN <b>AMSTERDAM</b> + <b>DALLAS–FORT WORTH</b><br>DESIGNED FOR BUSINESSES THAT ARE READY TO STAND OUT.</div>
- </div>
- <div class="hero-stage" role="img" aria-label="Illustrative web design concept in a floating browser window with purple graphics">
-   <div class="orb"></div><div class="stage-grid"></div>
-   <div class="browser" aria-hidden="true">
-     <div class="browser-top"><i></i><i></i><i></i><div class="url">yourbrand.com</div></div>
-     <div class="browser-content">
-       <div class="mini-nav">YOUR BRAND <small>HOME &nbsp; WORK &nbsp; CONTACT</small></div>
-       <div class="mini-headline">BUILT TO <span>STAND OUT.</span></div>
-       <div class="mini-button">DISCOVER MORE ↗</div>
-       <div class="mini-planet"></div>
-     </div>
-     <div class="browser-foot"><span>DESIGN CONCEPT / 001</span><span>REPFRAME MEDIA © 2026</span></div>
-   </div>
-   <div class="float-tag first">✦ CUSTOM-BUILT, NOT GENERIC</div>
-   <div class="float-tag second"><span>●</span> MOBILE-FIRST EXPERIENCE</div>
- </div>
-</div>
-</section>
-<div class="ticker"><div class="wrap ticker-inner"><span><b>01</b> / WEB DESIGN</span><span><b>02</b> / VIDEO ADS</span><span><b>03</b> / SOCIAL CONTENT</span><span><b>∞</b> / CREATIVE THINKING</span></div></div>
-<section class="section" id="services">
-<div class="wrap">
- <div class="section-top"><div><div class="eyebrow">WHAT WE DO</div><h2>What we can <span class="accent">help you with.</span></h2></div><p class="section-desc">Websites, video ads and social content that make it easier for people to find your business and get in touch.</p></div>
- <div class="services-grid">
- <article class="service">
-  <div class="service-visual visual-web" aria-hidden="true"><div class="pane"><div class="pane-head"></div><div class="pane-body"><div class="pane-lines"><i></i><i></i><i></i></div><div class="pane-art"></div></div></div></div>
-  <div class="service-body"><div class="service-index">01 / DIGITAL EXPERIENCE</div><h3>Website Design</h3><p>Your own professional home online, designed around your brand and built to turn interest into inquiries.</p><ul><li>Custom design and domain guidance</li><li>Mobile-friendly pages</li><li>Menus, galleries, services and bookings</li><li>Clear contact and quote requests</li></ul><a class="service-link" href="#contact" data-service="Website design">Discuss a website <span aria-hidden="true">↗</span></a></div>
- </article>
- <article class="service">
-  <div class="service-visual visual-video" aria-hidden="true"><div class="reel"><div class="play">▶</div><div class="reel-lines"><i></i><i></i></div></div><div class="video-side">HOOK → STORY → ACTION</div></div>
-  <div class="service-body"><div class="service-index">02 / PERFORMANCE CREATIVE</div><h3>Short-Form Ads</h3><p>Attention-grabbing video ads shaped around your business, your customers and your next action.</p><ul><li>Hooks and video concepts</li><li>Scripts and editing</li><li>Vertical ad formats</li><li>Creative variations for testing</li></ul><a class="service-link" href="#trial">Try a 15-second creative <span aria-hidden="true">↗</span></a></div>
- </article>
- <article class="service">
-  <div class="service-visual visual-social" aria-hidden="true"><div class="tiles"><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div></div></div>
-  <div class="service-body"><div class="service-index">03 / CONTENT THAT CONNECTS</div><h3>Social Content</h3><p>Fresh visual content that helps your business show up consistently and stand out from the usual feed.</p><ul><li>Reels and short-form edits</li><li>Product and service showcases</li><li>Before-and-after content</li><li>Brand-focused visuals</li></ul><a class="service-link" href="#contact" data-service="Social content">Plan your content <span aria-hidden="true">↗</span></a></div>
- </article>
- </div>
-</div>
-</section>
 
-<section class="section photo-showcase" id="examples" aria-labelledby="examplesTitle">
-  <div class="wrap">
-    <div class="section-top scroll-reveal">
-      <div><div class="eyebrow">SHOW, DON'T JUST TELL</div><h2 id="examplesTitle">Let your work <span class="accent">do the talking.</span></h2></div>
-      <p class="section-desc">Great visuals make a first impression. Your website should make it easy for customers to see what you do and reach out.</p>
-    </div>
-    <div class="photo-gallery">
-      <article class="photo-tile scroll-reveal" style="--reveal-delay:0ms">
-        <div class="photo-tile-image"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Polished sports car photographed outdoors" width="660" height="880" loading="lazy" decoding="async"><span class="photo-topline">01 / AUTO & DETAILING</span><div class="photo-text"><span>THE RESULTS MATTER</span><h3>Make every detail count.</h3><p>Show the finish before customers book.</p></div></div>
-      </article>
-      <article class="photo-tile scroll-reveal" style="--reveal-delay:140ms">
-        <div class="photo-tile-image"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Modern hair salon with bright styling stations" width="660" height="880" loading="lazy" decoding="async"><span class="photo-topline">02 / BEAUTY & SALONS</span><div class="photo-text"><span>THE EXPERIENCE MATTERS</span><h3>Look as good online.</h3><p>Help clients find you and book easily.</p></div></div>
-      </article>
-      <article class="photo-tile scroll-reveal" style="--reveal-delay:280ms">
-        <div class="photo-tile-image"><img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Freshly prepared breakfast food on a table" width="660" height="880" loading="lazy" decoding="async"><span class="photo-topline">03 / FOOD & BAKERIES</span><div class="photo-text"><span>THE PRODUCT MATTERS</span><h3>Show what you make.</h3><p>Turn curiosity into inquiries and orders.</p></div></div>
-      </article>
-    </div>
-    <div class="photo-gallery-footer"><p>Illustrative stock photos, not RepFrame Media client work.</p><a href="#contact" class="photo-gallery-cta" data-service="Website design">Let's discuss your website ↗</a></div>
-  </div>
-</section>
+<header class="site-header"><div class="wrap nav">
+<a class="brand" href="#top" aria-label="RepFrame Media home"><img class="brand-logo" src="repframe-logo.webp" width="48" height="48" alt=""><span class="brand-copy"><span class="brand-main">REP<span>FRAME</span></span><span class="brand-meta">MEDIA / CREATIVE STUDIO</span></span></a>
+<nav class="nav-links" aria-label="Main navigation"><a href="#services">Services</a><a href="#examples">Work</a><a href="#about">About</a><a href="#process">Process</a><a href="#contact">Contact</a></nav>
+<div class="nav-actions"><a class="btn primary small" href="#contact" data-service="Website design">Start a project ↗</a></div>
+<details class="mobile-nav"><summary aria-label="Open navigation menu">☰</summary><nav class="mobile-dropdown" aria-label="Mobile navigation"><a href="#services">Services</a><a href="#examples">Work</a><a href="#about">About</a><a href="#process">Process</a><a href="#faq">FAQ</a><a href="#contact">Start a project</a></nav></details>
+</div></header>
+<main id="main">
+
+<section class="hero" id="top"><div class="wrap hero-layout">
+<div class="hero-copy"><div class="pill mono"><i aria-hidden="true"></i> REPFRAME MEDIA / CREATIVE STUDIO</div>
+<h1>Make your brand <em>impossible</em> to ignore.</h1>
+<p>Websites and short-form ads for small businesses ready to look sharper online. Built around your story, not a template.</p>
+<div class="hero-buttons"><a class="btn primary" href="#contact" data-service="Free 15-second trial ad">Get a free 15-second ad ↗</a><a class="btn secondary" href="#websites">Explore website design ↗</a></div>
+<div class="hero-trust"><span>✓ Free sample</span><span>✓ Personal reply</span><span>✓ No obligation</span></div>
+<div class="hero-note">AMSTERDAM, NETHERLANDS <b>+</b> DALLAS–FORT WORTH, TEXAS</div>
+</div>
+<div class="hero-stage visual-hero" role="img" aria-label="Original design concepts: a laptop showing a premium auto-detailing website alongside a phone playing animated advertising concepts. Not commissioned client work.">
+<div class="orb" aria-hidden="true"></div><div class="stage-grid" aria-hidden="true"></div>
+<div class="mock-laptop" aria-hidden="true"><div class="mock-window"><div class="mock-toolbar"><span>● ● ●</span><span>northline.studio / concept</span></div>
+<div class="mock-content"><div class="mock-nav"><b>NORTHLINE <i>DETAIL</i></b><small>ABOUT &nbsp; SERVICES &nbsp; CONTACT</small></div><div class="mock-headline"><small>PREMIUM AUTOMOTIVE CARE</small><strong>Every detail<br>matters.</strong><em>SEE OUR WORK ↗</em></div><div class="mock-car"><span class="car-roof"></span><span class="car-body"></span><span class="car-highlight"></span></div><div class="mock-bottom">DESIGNED TO BE NOTICED &nbsp; / &nbsp; REPFRAME CONCEPT</div></div></div><div class="laptop-foot"></div></div>
+<div class="mock-phone" aria-hidden="true"><div class="phone-notch"></div><div class="phone-frames"><div class="phone-slide phone-slide-one"><small>01 / REPFRAME AD LAB</small><strong>MAKE<br>THEM<br>LOOK.</strong><span>FIRST FRAME / BIG IMPACT</span></div><div class="phone-slide phone-slide-two"><small>02 / REPFRAME AD LAB</small><strong>MAKE<br>IT<br>COUNT.</strong><span>CREATIVE THAT CONNECTS</span></div><div class="phone-slide phone-slide-three"><small>03 / REPFRAME AD LAB</small><strong>YOUR<br>BRAND.<br>LOUDER.</strong><span>15-SECOND CREATIVE CONCEPT</span></div></div><div class="phone-base">● &nbsp; CONCEPT REEL &nbsp; ↗</div></div>
+<div class="mock-note">ORIGINAL CONCEPTS · NOT CLIENT WORK</div>
+</div></div></section>
+<div class="ticker"><div class="wrap ticker-inner"><span><b>01</b> / WEB DESIGN</span><span><b>02</b> / VIDEO ADS</span><span><b>03</b> / SOCIAL CONTENT</span><span><b>∞</b> / CREATIVE THINKING</span></div></div>
+
+<section class="section" id="services"><div class="wrap">
+<div class="section-top"><div><div class="eyebrow">WHAT WE DO</div><h2>What we can <span class="accent">help you with.</span></h2></div><p class="section-desc">Three focused services. One simple goal: help the right customers find you and get in touch.</p></div>
+<div class="services-grid">
+<article class="service"><div class="service-visual visual-web" aria-hidden="true"><div class="pane"><div class="pane-head"></div><div class="pane-body"><div class="pane-lines"><i></i><i></i><i></i></div><div class="pane-art"></div></div></div></div><div class="service-body"><div class="service-index">01 / YOUR ONLINE HOME</div><h3>Website design</h3><p>Custom sites where customers can see your work, understand your services, and book or inquire.</p><div class="service-tags"><span>✦ Mobile-friendly</span><span>✦ Service galleries</span><span>✦ Clear calls to action</span></div><a class="service-link" href="#websites">See what we build ↗</a></div></article>
+<article class="service"><div class="service-visual visual-video" aria-hidden="true"><div class="reel"><div class="play">▶</div><div class="reel-lines"><i></i><i></i></div></div><div class="video-side">HOOK → STORY → ACTION</div></div><div class="service-body"><div class="service-index">02 / VIDEO THAT CATCHES THE EYE</div><h3>Short-form ads</h3><p>Hooks, edits, and short video concepts designed around your actual products or services.</p><div class="service-tags"><span>✦ Hooks</span><span>✦ Reels</span><span>✦ Ad variations</span></div><a class="service-link" href="#trial">Try a free sample ↗</a></div></article>
+<article class="service"><div class="service-visual visual-social" aria-hidden="true"><div class="tiles"><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div></div></div><div class="service-body"><div class="service-index">03 / SHOW UP CONSISTENTLY</div><h3>Social content</h3><p>Reels, before-and-afters, product features, and brand visuals for your everyday posts.</p><div class="service-tags"><span>✦ Reels</span><span>✦ Product clips</span><span>✦ Visual storytelling</span></div><a class="service-link" href="#contact" data-service="Social content">Talk content ↗</a></div></article>
+</div></div></section>
+
+<section class="section concepts-section" id="examples" aria-labelledby="examplesTitle"><div class="wrap">
+<div class="section-top scroll-reveal"><div><div class="eyebrow">CONCEPT WORK / ORIGINAL DESIGNS</div><h2 id="examplesTitle">Work that shows <span class="accent">what we mean.</span></h2></div><p class="section-desc">We created these fictional projects to show our design thinking. They're concepts, not completed client work.</p></div>
+<div class="concept-grid">
+<article class="concept-card scroll-reveal" style="--reveal-delay:0ms"><div class="concept-scene detailer-scene"><span class="concept-chip">01 · AUTO DETAILING</span>
+<div class="compare-frame" id="compareFrame" style="--split:54%">
+<div class="compare-old"><header>Car Cleaning Company</header><main><strong>Welcome to our website</strong><p>We clean cars in your area.</p><p>Call us for prices.</p><span>Contact</span></main></div>
+<div class="compare-new"><header><b>NORTHLINE.</b><small>WORK&nbsp;&nbsp; SERVICES&nbsp;&nbsp; BOOK</small></header><main><small>DETAILING DONE RIGHT</small><strong>A better first<br>impression.</strong><div class="compare-auto"></div><span>GET A QUOTE ↗</span></main></div>
+<div class="compare-boundary" aria-hidden="true"><span>↔</span></div></div>
+<div class="compare-label"><label for="comparisonSlider">Before / design concept</label><output id="comparisonValue" for="comparisonSlider">54%</output></div>
+<input id="comparisonSlider" type="range" min="5" max="95" value="54" aria-label="Drag to compare a plain site with the fictional Northline redesign">
+</div><div class="concept-copy"><span>WEBSITE · INTERACTIVE BEFORE / AFTER</span><h3>Northline Detailing</h3><p>From a plain information page to a visual portfolio and easy quote request.</p></div></article>
+<article class="concept-card scroll-reveal" style="--reveal-delay:120ms"><div class="concept-scene salon-scene"><span class="concept-chip">02 · SALON BOOKING</span>
+<div class="salon-phone" role="img" aria-label="Fictional Studio Bloom salon mobile website showing a styling portrait, services, and a booking button"><div class="salon-top"><strong>STUDIO BLOOM</strong><span>☰</span></div><div class="salon-photo"><div class="salon-portrait"></div></div><div class="salon-copy"><small>YOUR NEXT APPOINTMENT</small><strong>A little time<br>for yourself.</strong><p>Hair · Colour · Styling</p><span>BOOK AN APPOINTMENT ↗</span></div></div><span class="scene-footer">A MOBILE-FIRST BOOKING EXPERIENCE</span>
+</div><div class="concept-copy"><span>WEBSITE · APPOINTMENT FLOW</span><h3>Studio Bloom</h3><p>A calm, simple way to explore services and book the right stylist.</p></div></article>
+<article class="concept-card scroll-reveal" style="--reveal-delay:240ms"><div class="concept-scene bakery-scene"><span class="concept-chip">03 · BAKERY MENU</span>
+<div class="bakery-screen" role="img" aria-label="Fictional Sunday Crumb bakery website concept featuring a product menu and simple ordering option"><div class="bakery-top"><b>sunday<br>crumb.</b><small>MENU &nbsp; STORY &nbsp; ORDER</small></div><div class="bakery-copy"><small>BAKED FRESH · EVERY DAY</small><strong>The sweet part<br>of the day.</strong><span>EXPLORE OUR MENU ↗</span></div><div class="pastry-art"><i></i><i></i><i></i></div></div><span class="scene-footer">A MENU MADE TO BROWSE</span>
+</div><div class="concept-copy"><span>WEBSITE · FOOD AND PRODUCT MENU</span><h3>Sunday Crumb</h3><p>Product photography, clear menus, and an easy starting point for custom orders.</p></div></article>
+</div><div class="concept-disclaimer"><span>All businesses shown above are fictional concept brands, created to demonstrate our design approach.</span><a href="#contact" data-service="Website design">Discuss your own project ↗</a></div>
+</div></section>
 <section class="section dark-alt" id="websites">
 <div class="wrap showcase">
  <div class="showcase-copy">
@@ -329,34 +409,17 @@ footer{background:linear-gradient(120deg,#120b18,#180d1e 62%,#130a19)}
  </div>
 </div>
 </section>
-<section class="section" id="approach">
-<div class="wrap two-col">
- <div class="about-copy">
-  <div class="eyebrow">THE REPFRAME APPROACH</div>
-  <h2>Creative that starts with <span class="accent">your business.</span></h2>
-  <p>We don't believe every small business should look the same. A detailer needs to show transformations. A bakery needs to make ordering easy. A salon needs to make booking feel effortless.</p>
-  <p>That's where we start: understanding what you sell, why people choose you, and what your website or content needs to help them do next.</p>
-  <div class="loc-row"><span class="location-pill">✳ AMSTERDAM</span><span class="location-pill">✳ DALLAS–FORT WORTH</span></div>
- </div>
- <div class="benefit-list">
-  <div class="benefit"><div class="benefit-no">01</div><div><h3>Built for your industry</h3><p>Galleries for visual services, menus for food brands, and clear inquiries for local businesses.</p></div></div>
-  <div class="benefit"><div class="benefit-no">02</div><div><h3>Mobile comes first</h3><p>A smooth experience for the customers discovering you on their phones.</p></div></div>
-  <div class="benefit"><div class="benefit-no">03</div><div><h3>Clear next steps</h3><p>Booking, messaging, calling or requesting a quote should always be easy to find.</p></div></div>
-  <div class="benefit"><div class="benefit-no">04</div><div><h3>Distinctive visual direction</h3><p>Details, layouts and content that feel like your brand, not a one-size-fits-all page.</p></div></div>
- </div>
-</div>
-</section>
-<section class="section dark-alt" id="process">
-<div class="wrap">
-<div class="eyebrow">SIMPLE, COLLABORATIVE PROCESS</div>
-<h2>From first conversation <span class="accent">to final frame.</span></h2>
-<div class="steps">
- <div class="step"><div class="step-num">01</div><h3>Discover</h3><p>Tell us about your business, your goals and what you wish your current online presence did better.</p></div>
- <div class="step"><div class="step-num">02</div><h3>Create</h3><p>We develop a visual direction and build the website, ad or content around your specific needs.</p></div>
- <div class="step"><div class="step-num">03</div><h3>Refine</h3><p>We review the result with you and refine the details before the project is ready to use.</p></div>
-</div>
-</div>
-</section>
+
+<section class="section studio-about" id="about"><div class="wrap about-grid">
+<div class="scroll-reveal"><div class="eyebrow">ABOUT REPFRAME</div><h2>A small studio.<br><span class="accent">A hands-on approach.</span></h2><p>RepFrame Media is an independent creative studio working between Amsterdam and Dallas–Fort Worth. We create websites, short-form advertising, and social content for local businesses.</p><p>We start with a conversation, get to know what you offer, and work with you on a direction that actually fits.</p><a class="btn secondary" href="#contact" data-service="Not sure yet">Get to know us ↗</a></div>
+<div class="about-art scroll-reveal" style="--reveal-delay:110ms"><div class="about-ring"><img src="repframe-logo.webp" width="148" height="148" loading="lazy" alt="RepFrame Media circular purple logo"><div class="ring-a">AMSTERDAM</div><div class="ring-b">DALLAS / FORT WORTH</div></div><div class="about-art-bottom">DESIGN &nbsp; / &nbsp; EDIT &nbsp; / &nbsp; CREATE</div></div>
+</div></section>
+
+<section class="section dark-alt process-section" id="process"><div class="wrap"><div class="eyebrow">HOW WE WORK</div><h2>Three steps. <span class="accent">Nothing complicated.</span></h2><div class="steps compact-steps">
+<div class="step scroll-reveal"><div class="step-num">01</div><h3>Tell us</h3><p>Share what your business does and what you're looking for.</p></div>
+<div class="step scroll-reveal" style="--reveal-delay:100ms"><div class="step-num">02</div><h3>Plan</h3><p>We discuss ideas, scope, and the right creative direction.</p></div>
+<div class="step scroll-reveal" style="--reveal-delay:200ms"><div class="step-num">03</div><h3>Make it happen</h3><p>We build, review together, and refine the final result.</p></div>
+</div></div></section>
 <section class="section" id="trial">
 <div class="wrap">
  <div class="trial-banner">
@@ -377,33 +440,27 @@ footer{background:linear-gradient(120deg,#120b18,#180d1e 62%,#130a19)}
  </div>
 </div>
 </section>
-<section class="section" id="contact">
-<div class="wrap contact-wrap">
- <div class="contact-copy">
-  <div class="eyebrow">LET'S MAKE SOMETHING GREAT</div>
-  <h2>Tell us what you have <span class="accent">in mind.</span></h2>
-  <p>Whether you're launching a website, refreshing a brand or looking for your first short-form ad, we'd like to hear about your business.</p>
-  <p>We work across Amsterdam and the Dallas–Fort Worth area, and collaborate remotely with businesses elsewhere.</p>
-  <a class="contact-email" href="mailto:info.repframemedia@gmail.com">info.repframemedia@gmail.com ↗</a>
- </div>
- <div class="contact-panel">
-  <form id="contactForm">
-   <div class="form-grid">
-    <div class="field"><label for="name">Your name *</label><input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name"></div>
-    <div class="field"><label for="email">Email address *</label><input type="email" id="email" name="email" required autocomplete="email" placeholder="you@business.com"></div>
-   </div>
-   <div class="field"><label for="business">Business or brand name *</label><input type="text" id="business" name="business" required placeholder="Your business name"></div>
-   <div class="field"><label for="service">What are you looking for?</label><select id="service" name="service"><option>Website design</option><option>Free 15-second trial ad</option><option>Short-form video ads</option><option>Social content</option><option>Not sure yet</option></select></div>
-   <div class="field"><label for="message">Tell us a little about your project *</label><textarea id="message" name="message" required placeholder="What does your business do? What would you like to improve?"></textarea></div>
-   <button class="btn primary form-button" type="submit">Open email draft <span aria-hidden="true">↗</span></button>
-   <p class="form-note">This form opens a pre-filled email in your email app. Your message is not sent until you review and send that email. You can also contact us directly at the address on the left.</p>
-  </form>
- </div>
-</div>
-</section>
-</main>
-<footer><div class="wrap footer-grid"><div><a class="brand" href="#top"><img class="brand-logo" src="repframe-logo.webp" width="48" height="48" alt="" aria-hidden="true" decoding="async"><span class="brand-copy"><span class="brand-main">REP<span>FRAME</span></span><span class="brand-meta">MEDIA / CREATIVE STUDIO</span></span></a><div class="footer-links"><a href="#services">Services</a><a href="#websites">Websites</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div></div><div class="footer-meta">INDEPENDENT CREATIVE STUDIO<br>AMSTERDAM · DALLAS–FORT WORTH<br>© 2026 REPFRAME MEDIA</div></div></footer>
 
+<section class="section" id="contact"><div class="wrap contact-wrap">
+<div class="contact-copy"><div class="eyebrow">LET'S TALK</div><h2>Tell us about <span class="accent">your business.</span></h2><p>You don't need a full brief. Send a quick introduction and what you need help with, and we'll take it from there.</p><p>Amsterdam, Netherlands · Dallas–Fort Worth, Texas</p><a class="contact-email" href="mailto:info.repframemedia@gmail.com">info.repframemedia@gmail.com ↗</a></div>
+<div class="contact-panel"><div class="contact-form-intro"><h3>Start here.</h3><p>Just a few details to get the conversation going.</p></div>
+<form id="contactForm" action="https://formsubmit.co/info.repframemedia@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="New RepFrame Media website inquiry">
+<input type="hidden" name="_next" value="https://inforepframemedia-cmd.github.io/repframe-website/thank-you.html">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" id="business" name="business" value="">
+<div class="form-grid"><div class="field"><label for="name">Your name *</label><input id="name" type="text" name="name" autocomplete="name" required maxlength="100" placeholder="Your name"></div>
+<div class="field"><label for="email">Email address *</label><input id="email" type="email" name="email" autocomplete="email" required maxlength="160" placeholder="you@business.com"></div></div>
+<div class="field"><label for="service">What are you looking for?</label><select id="service" name="service"><option>Free 15-second trial ad</option><option>Website design</option><option>Short-form video ads</option><option>Social content</option><option>Not sure yet</option></select></div>
+<div class="field"><label for="message">Anything else? <span class="optional-label">(optional)</span></label><textarea id="message" name="message" rows="3" maxlength="1600" placeholder="Your business, a question, or a link to your socials…"></textarea></div>
+<div class="form-honey" aria-hidden="true"><label for="form-honey">Leave blank</label><input id="form-honey" type="text" name="_honey" tabindex="-1" autocomplete="off"></div>
+<button type="submit" class="btn primary form-button">Send my inquiry ↗</button>
+<p class="form-note">This form uses FormSubmit to deliver your message to our inbox. We don't ask for payment or a signup.</p>
+</form></div></div></section>
+</main>
+
+<footer><div class="wrap footer-grid"><div><a class="brand" href="#top"><img class="brand-logo" src="repframe-logo.webp" width="48" height="48" alt=""><span class="brand-copy"><span class="brand-main">REP<span>FRAME</span></span><span class="brand-meta">MEDIA / CREATIVE STUDIO</span></span></a><div class="footer-links"><a href="#services">Services</a><a href="#examples">Work</a><a href="#about">About</a><a href="#contact">Contact</a></div></div><div class="footer-meta">AMSTERDAM · DALLAS–FORT WORTH<br><a href="mailto:info.repframemedia@gmail.com">info.repframemedia@gmail.com</a><br>© 2026 REPFRAME MEDIA</div></div></footer>
+<a href="#contact" data-service="Free 15-second trial ad" class="mobile-free-cta">Get a free ad ↗</a>
 <div id="readingProgress" aria-hidden="true"></div>
 <button class="back-to-top" id="backToTop" type="button" hidden>↑ Back to top</button>
 
@@ -427,13 +484,7 @@ footer{background:linear-gradient(120deg,#120b18,#180d1e 62%,#130a19)}
  const service=document.getElementById('service');
  document.querySelectorAll('[data-service]').forEach(el=>el.addEventListener('click',()=>{service.value=el.dataset.service;}));
  document.querySelectorAll('.mobile-dropdown a').forEach(el=>el.addEventListener('click',()=>{document.querySelector('.mobile-nav').open=false;}));
- document.getElementById('contactForm').addEventListener('submit',function(event){
-   event.preventDefault();
-   const data={name:document.getElementById('name').value.trim(),email:document.getElementById('email').value.trim(),business:document.getElementById('business').value.trim(),service:service.value,message:document.getElementById('message').value.trim()};
-   const subject='RepFrame project inquiry — '+data.business;
-   const body='Hello RepFrame Media,\n\nName: '+data.name+'\nEmail: '+data.email+'\nBusiness: '+data.business+'\nInterested in: '+data.service+'\n\nProject details:\n'+data.message+'\n\nKind regards,\n'+data.name;
-   window.location.href='mailto:'+emailTo+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
- });
+ document.getElementById('contactForm').addEventListener('submit',function(){const button=this.querySelector('button[type="submit"]');if(button){button.textContent='Sending inquiry…';button.disabled=true;}});
  const launch=document.getElementById('chatLaunch'),panel=document.getElementById('chatPanel'),close=document.getElementById('chatClose'),input=document.getElementById('chatInput'),messages=document.getElementById('messages'),suggestions=document.getElementById('suggestions');
  const profile={goal:null,industry:null,feature:null,brand:null,brief:null,stage:null};
  const industryData={
@@ -613,5 +664,12 @@ footer{background:linear-gradient(120deg,#120b18,#180d1e 62%,#130a19)}
 })();
 </script>
 
+
+<script>
+(function(){
+const range=document.getElementById('comparisonSlider'),frame=document.getElementById('compareFrame'),out=document.getElementById('comparisonValue');
+if(range&&frame){function change(){frame.style.setProperty('--split',range.value+'%');if(out)out.textContent=range.value+'%'}range.addEventListener('input',change);change();}
+})();
+</script>
 </body>
 </html>
